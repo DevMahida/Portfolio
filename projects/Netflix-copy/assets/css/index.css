@@ -1,0 +1,452 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Netflix Sans';
+    list-style: none;
+}
+
+:root {
+    --color-white: #fff;
+    --color-black: #000;
+    --color-blue:#2f78d6;
+    --bg-faq:#2d2d2d;
+    --bg-faq-hover:#414141;
+    --color-shadow-banner: #121211;
+    --color-light-gray:#babbc4;
+    --color-grey: #0f0f0f;
+    --color-red: #e50914;
+    --color-dark-red: #b50b13;
+    --color-placeholder:#b0b8b8;
+    --input-bg-color:#12110fbb;
+    --input-border-color:#645b5b;
+    --transition-02: all 0.2s linear;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+body {
+    background-color: var(--color-black);
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.justify-around{
+    justify-content: space-around;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.all-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-wrap{
+    flex-wrap:wrap;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.padding-8{
+    padding: 0 8px ;
+}
+
+.col-1{width: 8.33%;}
+.col-2{width: 16.67%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.67%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.67%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.67%;}
+.col-12{width: 100%;}
+
+*[class *= "col-"]{
+    padding: 0 8px;
+}
+
+/*##################################################
+                    header
+####################################################*/
+
+.header {
+    padding: 25px;
+    background-color: transparent;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, #000000cc 0%, #000000c9 8.333%, #000000c1 25.67%, #000000b3 33%, #0000009f 43.33%, #00000085 50.67%, #00000066 59%, #00000047 68.33%, #0000002d 73.67%, #0000001a 81%, #0000000b 90.33%, #00000003 100.67%, #00000000 100.0%);
+}
+
+.logo svg {
+    width: 150px;
+}
+
+.logo svg path {
+    fill: var(--color-red);
+}
+
+/*##################### right part ######################*/
+
+.language select {
+    background-color: var(--color-grey);
+    color: var(--color-white);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.language select option {
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+.sign-in {
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: var(--color-red);
+    color: var(--color-white);
+    cursor: pointer;
+    transition: var(--transition-02);
+}
+
+.sign-in:hover {
+    background-color: var(--color-dark-red);
+}
+
+/*##################################################
+                    Main
+####################################################*/
+
+/*##################### banner ######################*/
+
+.banner {
+    position: relative;
+    background-image: url('../images/home-banner.jpg');
+    background-size: cover;
+    height: 100vh;
+    z-index: 1;
+}
+
+.banner::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: var(--color-black);
+    opacity: 0.7;
+    z-index: 1;
+}
+
+/*----title button----*/
+.title-button{
+    position: relative;
+    z-index: 2;
+    color: var(--color-white);
+    text-align: center;
+}
+
+.title h1{
+    font-size: 56px;
+    max-width: 700px;
+    text-align: center;
+}
+
+.title p{
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 500;
+    min-width: none;
+}
+
+/*----input-part ----*/
+.input-part{
+    margin: 20px 0;
+}
+
+.input-part button{
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 26px;
+    font-weight: 500;
+    color: var(--color-white);
+    background-color: var(--color-red);
+    transition: var(--transition-02);
+}
+
+.input-part button:hover {
+    background-color: var(--color-dark-red);
+}
+
+.input-part input{
+    width: 400px;
+    height: 50px;
+    color: var(--color-white);
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid var(--input-border-color);
+    padding: 10px;
+    background-color: var(--input-bg-color) ;
+}
+
+.input-part input::placeholder{
+    color: var(--color-placeholder);
+}
+
+/*---- parting line ----*/
+
+.parting-line {
+    position: relative;
+    height: 5px;
+}
+
+.parting-line::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin-top: -.25rem;
+    border-radius: inherit;
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+}
+
+/*##################### trending now ######################*/
+.trending-now{
+    color: var(--color-white);
+    padding: 30px 0;
+}
+
+.trending-now h3{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.trending-card{
+    position: relative;
+    cursor: pointer;
+    margin: 20px;
+     width: 180px;
+    height: 250px;
+    border-radius: 10px;
+    background: linear-gradient(149deg, #192247 0%, #210e17 99.08%);
+    transition: var(--transition-02);
+}
+
+.trending-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 1px var(--color-white);
+}
+
+.trending-card span{
+    position: relative;
+}
+
+.trending-card span::before{
+    content: attr(data-content);
+    position: absolute;
+    font-weight: 700;
+    font-size: 100px;
+    top: 118px;
+    left: -24px;
+    color: var(--color-black);
+    text-shadow: 0 0 25px var(--color-black);
+    -webkit-text-stroke: 3px rgb(202, 202, 202);
+}
+
+/* -- images -- */
+.trending-img1{
+    background-image: url('../images/saiyaara.webp');
+    background-size: 100% 100%;
+}
+
+.trending-img2{
+    background-image: url('../images/wednesday.webp');
+    background-size: 100% 100%;
+}
+
+.trending-img3{
+    background-image: url('../images/the-ba-of-bollywoods.webp');
+    background-size: 100% 100%;
+}
+
+.trending-img4{
+    background-image: url('../images/the-kapil-sharma-show.webp');
+    background-size: 100% 100%;
+}
+
+/*##################### trending now ######################*/
+.reason-to-join{
+    color: var(--color-white);
+}
+
+.reason-to-join h3{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.reason-to-join .join-card{
+    padding: 20px;
+    height: 300px;
+    border-radius: 10px;
+    
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    position: relative;
+}
+
+.join-card .join-card-icons{
+    position: absolute;
+    bottom: 10px;
+    right: 8px;
+}
+
+.reason-to-join .join-card p{
+    color: var(--color-light-gray);
+}
+
+/*##################### faq ######################*/
+.faq{
+    color: var(--color-white);
+    margin: 30px 0;
+}
+.faq h3{
+    font-size: 24px;
+}
+
+.faq .questions{
+    margin: 30px 0;
+}
+
+.faq .question{
+    background-color: var(--bg-faq);
+    font-size: 25px;
+    padding: 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: var(--transition-02);
+}
+
+.faq .question:hover{
+    background-color: var(--bg-faq-hover);
+}
+
+/*##################### end get started ######################*/
+.end-get-started .get-started{
+    color: var(--color-white);
+    margin-top: 70px;
+}
+
+.end-get-started .get-started p{
+    text-align: center;
+}
+
+.end-input-part{
+    margin: 20px 0;
+}
+
+.end-input-part input{
+    width: 560px;
+    height: 50px;
+    color: var(--color-white);
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid var(--input-border-color);
+    padding: 10px;
+    background-color: var(--input-bg-color) ;
+}
+
+.end-input-part input::placeholder{
+    color: var(--color-placeholder);
+}
+
+.end-input-part button{
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 26px;
+    font-weight: 500;
+    color: var(--color-white);
+    background-color: var(--color-red);
+    transition: var(--transition-02);
+}
+
+.end-input-part button:hover {
+    background-color: var(--color-dark-red);
+}
+
+/*##################################################
+                    footer
+####################################################*/
+
+footer{
+    padding: 20px 0;
+    color: var(--color-placeholder);
+    margin-top: 70px;
+}
+
+/* -- contact -- */
+
+.footer ins{
+    cursor: pointer;
+}
+
+/* -- footer data -- */
+
+.footer-data{
+    margin: 30px 0;
+}
+
+.footer li{
+    margin-top: 12px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* -- end part -- */
+.end-part{
+    margin-top: 70px ;
+}
+
+.end-info p{
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+.end-info p:last-child{
+    font-size: 13px;
+    margin-bottom: 100px;
+}
+
+.end-info ins{
+    color: var(--color-blue);
+}

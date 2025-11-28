@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dev Mahida - Personal portfolio</title>
+
+  <link rel="icon" href="./assets/images/pfp_logo.png" />
+
+  <!-- swiper slider cdn -->
+  <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+
+  <!-- Remix icon cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/index.css">
+</head>
+
+<!-- body starts -->
+
+<body data-bs-spy="scroll" data-bs-target="#side-navbar" data-bs-offset="50">
+
+  <!-- header starts -->
+  <header>
+    <div class="position-fixed z-3 start-0 end-0">
+      <nav class="navbar bg-primary-dark d-lg-none z-3 ">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="./index.html">Dev Mahida</a>
+
+          <div class="d-flex text-white">
+            <ul class="navbar-nav d-flex text-white flex-wrap flex-row gap-3 align-bottom">
+              <li class="nav-item d-flex ">
+                <a class="nav-link fs-3 text-white" target="_blank"
+                  href="https://github.com/DevMahida?tab=repositories">
+                  <i class="ri-github-fill"></i>
+                </a>
+              </li>
+              <li class="nav-item d-flex ">
+                <a class="nav-link fs-3 text-white" target="_blank" href="https://www.linkedin.com/in/dev-mahida/">
+                  <i class="ri-linkedin-box-fill"></i>
+                </a>
+              </li>
+              <li class="nav-item d-flex ">
+                <a class="nav-link fs-3 text-white" target="_blank" href="#">
+                  <i class="ri-twitter-x-fill"></i>
+                </a>
+              </li>
+            </ul>
+
+            <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight">
+              <span class="text-white"><i class="ri-menu-line"></i></span>
+            </button>
+          </div>
+
+        </div>
+      </nav>
+
+      <div class="offcanvas offcanvas-end bg-dark-nevy" tabindex="-1" id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header text-white">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel">Menus</h5>
+          <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body text-white">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Whta I Do</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#resume">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonial">Testimonial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header  ends -->
+
+
+  <!-- body content -->
+  <div class="app d-flex flex-nowrap">
+
+    <!-- side header starts -->
+    <aside class="side-header sticky-top px-5 d-none d-lg-flex flex-column justify-content-around align-content-center"
+      id="side-navbar">
+
+      <!-- profile -->
+      <div class="row align-top">
+        <div class="col-12">
+          <div class="info-card nav-item">
+            <a class="text-decoration-none " href="./index.html">
+              <div class="img-br"><img src="./assets/images/pfp_logo.png" alt="" width="150px"></div>
+              <p class=" h5 my-3 text-center text-white ">Dev Mahida</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- side-navbar starts-->
+      <nav class="navbar-nav d-flex">
+        <li class="nav-item text-center my-1">
+          <a class="nav-link" aria-current="page" href="#home">Home</a>
+        </li>
+        <li class="nav-item text-center my-1">
+          <a class="nav-link" href="#about">About Me</a>
+        </li>
+        <li class="nav-item text-center my-1">
+          <a class="nav-link" aria-disabled="true" href="#services">What I Do</a>
+        </li>
+        <li class="nav-item text-center my-1">
+          <a class="nav-link" aria-disabled="true" href="#resume">Resume</a>
+        </li>
+        <li class="nav-item text-center my-1">
+          <a class="nav-link" aria-disabled="true" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item text-center my-1">
+          <a class="nav-link" aria-disabled="true" href="#testimonial">Testimonial</a>
+        </li>
+        <li class="nav-item text-center my-1">
+          <a class="nav-link" aria-disabled="true" href="#contact">Contact</a>
+        </li>
+      </nav>
+      <!-- side-navbar ends-->
+
+      <!--external links -->
+      <ul class="navbar-nav d-flex flex-wrap flex-row justify-content-between align-bottom">
+        <li class="nav-item d-flex">
+          <a class="nav-link fs-3" target="_blank" href="https://github.com/DevMahida?tab=repositories">
+            <i class="ri-github-fill"></i>
+          </a>
+        </li>
+        <li class="nav-item d-flex">
+          <a class="nav-link fs-3" target="_blank" href="https://www.linkedin.com/in/dev-mahida/">
+            <i class="ri-linkedin-box-fill"></i>
+          </a>
+        </li>
+        <li class="nav-item d-flex">
+          <a class="nav-link fs-3" target="_blank" href="#">
+            <i class="ri-twitter-x-fill"></i>
+          </a>
+        </li>
+      </ul>
+
+    </aside>
+    <!-- side header ends -->
+
+    <div class="main-footer-wrapper flex-grow-1">
+      <!-- main starts -->
+      <main>
+
+
+        <!-- banner section starts -->
+        <section class="banner-section text-white d-flex align-items-center justify-content-center height-950"
+          id="home">
+          <div class="container container-sm z-2">
+            <div class="d-flex flex-nowrap flex-column">
+              <p class="fs-2 fw-medium text-center m-0">Welcome</p>
+              <h2 class="display-3 fw-semibold text-center">I'm Dev Mahida</h2>
+              <p class="fs-4 text-center">based in Surat, Gujarat</p>
+              <button
+                class="btn rounded-5 fw-bold my-3 px-5 py-2 align-self-center btn-outline-success border-3 transition">Hire
+                me</button>
+            </div>
+          </div>
+        </section>
+        <!-- banner section starts -->
+
+        <!-- about starts -->
+        <section class="py-5 px-sm-5 px-2 bg-d-primary text-grey" id="about">
+          <div class="container position-relative">
+            <!-- about title -->
+            <p class="h1 text-white text-center mt-5 mb-3">Know Me More</p>
+
+            <!-- about info -->
+            <div class="row mb-5">
+              <div class="col-lg-8 mt-5 pe-lg-5">
+                <div class="know-me">
+                  <h2 class="text-white mb-4 text-center text-lg-start">I'm <span class="text-light-green">Dev
+                      Mahida,</span> a Web Developer</h2>
+                  <p class="fs-6 lh-base mb-3 text-center text-lg-start">
+                    I’m a passionate Web Developer based in Surat, Gujarat, specializing in building modern, responsive,
+                    and user-friendly websites. I love turning ideas into real, functional digital experiences.
+                  </p>
+                  <p class="fs-6 lh-base text-center text-lg-start">
+                    With experience in front-end development, UI structuring, and problem-solving, I enjoy creating
+                    clean interfaces and writing efficient code. My goal is to build websites that not only look great
+                    but also perform seamlessly across all devices.
+                  </p>
+                  <p class="fs-6 lh-base text-center text-lg-start">
+                    I’m constantly learning new technologies, exploring better development practices, and improving my
+                    skills to deliver high-quality work.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4 mt-5">
+                <div class="info-me">
+                  <ul class="list-unstyled text-light">
+                    <li class="py-4 border-bottom border-secondary"><span class="fw-medium">Name: </span>Dev Mahida</li>
+                    <li class="py-4 border-bottom border-secondary">
+                      <span class="fw-medium">Email: </span>
+                      <a href="mailto:devmahidara05@gmail.com" target="_blank"
+                        class="text-light-green text-decoration-none">devmahidara05@gmail.com</a>
+                    </li>
+                    <li class="py-4 border-bottom border-secondary"><span class="fw-medium">Age: </span> 20</li>
+                    <li class="py-4"><span class="fw-medium">From: </span> Surat, Gujarat</li>
+                  </ul>
+                  <a class="btn btn-success transition fs-5 px-4 py-2 rounded-5" href="#home">Download CV</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- about ends -->
+
+
+        <!-- What I Do starts -->
+        <section id="services" class="py-5 px-sm-5 px-2 bg-d-secondary text-grey">
+          <div class="container position-relative">
+            <!-- services title -->
+            <p class="h1 text-white text-center mt-5 mb-3">What I Do?</p>
+
+            <!-- services info -->
+            <div class="row mb-5">
+
+              <div class="col-md-6 mt-5">
+                <div class="detail d-flex flex-nowrap flex-row px-lg-3">
+                  <div class="d-flex gap-4">
+                    <div
+                      class="service-card-icon d-flex justify-content-center align-items-center bg-d-primary py-1 px-3 rounded-2 text-light-green fs-1 ">
+                      <i class="ri-pie-chart-2-fill"></i>
+                    </div>
+                    <div class="text-white">
+                      <h4>Data Analysis</h4>
+                      <p class="text-grey lh-base">
+                        I analyze data to uncover patterns, trends, and insights that support better decision-making. I
+                        enjoy turning raw information into clear, actionable results.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 mt-5">
+                <div class="detail d-flex flex-nowrap flex-row px-lg-3">
+                  <div class="d-flex gap-4">
+                    <div
+                      class="service-card-icon d-flex justify-content-center align-items-center bg-d-primary py-1 px-3 rounded-2 text-light-green fs-1 ">
+                      <i class="ri-computer-line"></i>
+                    </div>
+                    <div class="text-white">
+                      <h4>Web Design</h4>
+                      <p class="text-grey lh-base">
+                        I create clean, modern, and intuitive website layouts focused on user experience. My designs aim
+                        to be visually appealing, easy to navigate, and responsive.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 mt-5">
+                <div class="detail d-flex flex-nowrap flex-row px-lg-3">
+                  <div class="d-flex gap-4">
+                    <div
+                      class="service-card-icon d-flex justify-content-center align-items-center bg-d-primary py-1 px-3 rounded-2 text-light-green fs-1 ">
+                      <i class="ri-megaphone-fill"></i>
+                    </div>
+                    <div class="text-white">
+                      <h4>SEO Optimization</h4>
+                      <p class="text-grey lh-base">
+                        I optimize websites to improve their search engine ranking, visibility, and loading speed. I
+                        focus on clean structure, relevant content, and performance-friendly practices.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 mt-5">
+                <div class="detail d-flex flex-nowrap flex-row px-lg-3">
+                  <div class="d-flex gap-4">
+                    <div
+                      class="service-card-icon d-flex justify-content-center align-items-center bg-d-primary py-1 px-3 rounded-2 text-light-green fs-1 ">
+                      <i class="ri-deepseek-fill"></i>
+                    </div>
+                    <div class="text-white">
+                      <h4>Machine Learning</h4>
+                      <p class="text-grey lh-base">
+                        I explore machine learning techniques to build predictive models, automate tasks, and solve
+                        real-world problems using data-driven approaches.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+        </section>
+        <!-- services ends -->
+
+        <!-- resume starts -->
+        <section id="resume" class="py-5 px-sm-5 px-2 bg-d-primary text-grey">
+          <div class="container position-relative">
+            <!-- resume title -->
+            <p class="h1 text-white text-center m-5">Resume</p>
+
+            <!-- education part starts -->
+            <div>
+              <p class="h3 text-white">My Education</p>
+
+              <!-- resume card -->
+              <div class="row mb-5">
+
+                <div class="col-md-6 mt-4">
+                  <div class="resume-card px-3 py-4 rounded text-white">
+                    <p class="badge text-bg-danger">2023 — 2027</p>
+                    <h5>Computer Engineering</h5>
+                    <p class="text-light-green">C. K. Pithawala College of Engineering and Technology</p>
+                    <p class="text-grey mb-0">
+                      I am pursuing Computer Engineering, gaining knowledge in programming, web technologies, and problem-solving while actively working on real-world projects and developing practical skills through continuous hands-on learning.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 mt-4">
+                  <div class="resume-card px-3 py-4 rounded text-white">
+                    <p class="badge text-bg-danger">2025 — 2026</p>
+                    <h5>Web development</h5>
+                    <p class="text-light-green">Red & White</p>
+                    <p class="text-grey mb-0">
+                      I am learning Full Stack Development, covering front-end, back-end, UI fundamentals, and building practical projects that strengthen my experience with modern web technologies and complete application development workflows.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 mt-4">
+                  <div class="resume-card px-3 py-4 rounded text-white">
+                    <p class="badge text-bg-danger">2022 — 2023</p>
+                    <h5>Higher Secondary Education</h5>
+                    <p class="text-light-green">Smt. V. D. Desai (Wadiwala) School</p>
+                    <p class="text-grey mb-0">
+                      I completed my HSC with a focus on science and mathematics, building a strong foundation in logical thinking, analytical ability, disciplined study habits, and deep technical curiosity.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 mt-4">
+                  <div class="resume-card px-3 py-4 rounded text-white">
+                    <p class="badge text-bg-danger">2020 — 2021</p>
+                    <h5>Secondary Education</h5>
+                    <p class="text-light-green">Smt. V. D. Desai (Wadiwala) School</p>
+                    <p class="text-grey mb-0">
+                      I completed my SSC with consistent academic performance and gradually developed an interest in computers, technology, problem-solving, creativity, and exploring how digital systems work in everyday applications.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!-- education part ends -->
+
+            <!-- skill part strats -->
+            <div>
+              <p class="h3 text-white mb-4">My Skills</p>
+
+              <!-- <div class="row my-4">
+                <div class="col-md-6">
+                  <div class="skill-card">
+                    <p class="text-white d-flex justify-content-between h6 mb-2"><span>Web Design</span><span>25%</span>
+                    </p>
+                    <div class="progress bg-dark-nevy mb-4" role="progressbar" aria-label="Example 1px high"
+                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 8px">
+                      <div class="progress-bar bg-light-green" style="width: 25%"></div>
+                    </div>
+
+                    <p class="text-white d-flex justify-content-between h6 mb-2"><span>HTML / CSS</span><span>95%</span>
+                    </p>
+                    <div class="progress bg-dark-nevy mb-4" role="progressbar" aria-label="Example 1px high"
+                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 8px">
+                      <div class="progress-bar bg-light-green" style="width: 95%"></div>
+                    </div>
+                    <p class="text-white d-flex justify-content-between h6 mb-2"><span>Javascript</span><span>5%</span>
+                    </p>
+                    <div class="progress bg-dark-nevy mb-4" role="progressbar" aria-label="Example 1px high"
+                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 8px">
+                      <div class="progress-bar bg-light-green" style="width: 5%"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="skill-card">
+                    <p class="text-white d-flex justify-content-between h6 mb-2"><span>React JS</span><span>10%</span>
+                    </p>
+                    <div class="progress bg-dark-nevy mb-4" role="progressbar" aria-label="Example 1px high"
+                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 8px">
+                      <div class="progress-bar bg-light-green" style="width: 10%"></div>
+                    </div>
+
+                    <p class="text-white d-flex justify-content-between h6 mb-2"><span>Bootstrap</span><span>50%</span>
+                    </p>
+                    <div class="progress bg-dark-nevy mb-4" role="progressbar" aria-label="Example 1px high"
+                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 8px">
+                      <div class="progress-bar bg-light-green" style="width: 50%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+
+              <div class="container overflow-hidden">
+                <div class="swiper mySwiper2">
+                  <div class="swiper-wrapper">
+
+                    <!-- slides starts -->
+                    <div class="swiper-slide d-flex justify-content-center">
+                      <img src="./assets/images/html-logo.png" alt="" width="100px">
+                    </div>
+                    <div class="swiper-slide d-flex justify-content-center">
+                      <img src="./assets/images/CSS-logo.png" alt="" width="100px">
+                    </div>
+                    <div class="swiper-slide d-flex justify-content-center">
+                      <img src="./assets/images/JS-logo.png" alt="" width="100px">
+                    </div>
+                    <div class="swiper-slide d-flex justify-content-center">
+                      <img src="./assets/images/bootstrap-logo.png" alt="" width="100px">
+                    </div>
+                    <div class="swiper-slide d-flex justify-content-center">
+                      <img src="./assets/images/react-js-logo.png" alt="" width="100px">
+                    </div>
+                    <div class="swiper-slide d-flex justify-content-center">
+                      <img src="./assets/images/python-logo.png" alt="" width="100px">
+                    </div>
+
+                    <!-- slides ends -->
+
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+
+            </div>
+            <!-- skill part edns -->
+          </div>
+
+        </section>
+        <!-- resume ends -->
+
+        <!-- portfolio starts -->
+        <section id="portfolio" class="py-5 px-sm-5 px-2 bg-d-secondary text-grey">
+          <div class="container position-relative">
+            <!-- portfolio title -->
+            <p class="h1 text-white text-center m-5">My Work</p>
+
+            <!-- portfolio info -->
+            <div class="row mb-5 gy-4">
+
+              <div class="col-sm-6 col-lg-4">
+                <div>
+                  <a class="text-decoration-none text-white" href="/projects/Lecture-10_WireFrame/index.html"
+                    target="_blank">
+                    <div class="project-card rounded-2 overflow-auto text-center bg-dark-nevy p-4">
+                      <img class="rounded-2 mb-3" src="./assets/images/flipcart-copy.png" alt="" width="100%">
+                      <span class="mx-auto">Flipkart Copy (HTML) </span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                <div>
+                  <a class="text-decoration-none text-white" href="/projects/Lecture-11_Casino_wireframe/index.html"
+                    target="_blank">
+                    <div class="project-card rounded-2 overflow-auto text-center bg-dark-nevy p-4">
+                      <img class="rounded-2 mb-3" src="./assets/images/casino.png" alt="" width="100%">
+                      <span class="mx-auto">Casino Website (HTML) </span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                <div>
+                  <a class="text-decoration-none text-white" href="/projects/Chess/index.html" target="_blank">
+                    <div class="project-card rounded-2 overflow-auto text-center bg-dark-nevy p-4">
+                      <img class="rounded-2 mb-3" src="./assets/images/chess.png" alt="" width="100%">
+                      <span class="mx-auto">Chess Board (HTML / CSS) </span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                <div>
+                  <a class="text-decoration-none text-white" href="/projects/Netflix-copy/index.html" target="_blank">
+                    <div class="project-card rounded-2 overflow-auto text-center bg-dark-nevy p-4">
+                      <img class="rounded-2 mb-3" src="./assets/images/netflix-copy.png" alt="" width="100%">
+                      <span class="mx-auto">Netflix Replica (HTML / CSS) </span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                <div>
+                  <a class="text-decoration-none text-white" href="/projects/PR-1/index.html" target="_blank">
+                    <div class="project-card rounded-2 overflow-auto text-center bg-dark-nevy p-4">
+                      <img class="rounded-2 mb-3" src="./assets/images/E-grocery.png" alt="" width="100%">
+                      <span class="mx-auto">E-Grocery Super Market (HTML / CSS) </span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                <div>
+                  <a class="text-decoration-none text-white" href="/projects/PrimeVideos-copy/index.html"
+                    target="_blank">
+                    <div class="project-card rounded-2 overflow-auto text-center bg-dark-nevy p-4">
+                      <img class="rounded-2 mb-3" src="./assets/images/primevideos.png" alt="" width="100%">
+                      <span class="mx-auto">PrimeVideos Replica (HTML / CSS) </span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                <div>
+                  <a class="text-decoration-none text-white" href="/projects/Doob(max-width)/index.html"
+                    target="_blank">
+                    <div class="project-card rounded-2 overflow-auto text-center bg-dark-nevy p-4">
+                      <img class="rounded-2 mb-3" src="./assets/images/Doob.png" alt="" width="100%">
+                      <span class="mx-auto">Doob Website (HTML / CSS / MQ) </span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+
+            </div>
+        </section>
+        <!-- portfolio ends -->
+
+        <!-- testimonial starts -->
+        <section id="testimonial" class="py-5 px-sm-5 px-2 bg-d-primary text-grey">
+          <div class="container">
+            <!-- testimonial title -->
+            <p class="h1 text-white text-center m-5">Client Speak</p>
+
+            <!-- Swiper -->
+          </div>
+
+          <div class="container overflow-hidden py-3">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+
+                <!-- slides starts -->
+                <div class="swiper-slide bg-dark-nevy mb-5 p-4 rounded">
+
+                  <!-- pfp-name -->
+                  <div class="d-flex gap-2 align-items-center">
+                    <div>
+                      <img class="slider-img" src="./assets/images/man.png" alt="">
+                    </div>
+                    <div>
+                      <h5 class="mb-1 text-white">Anant Shah</h5>
+                      <p class="mb-0">Mentor</p>
+                    </div>
+                  </div>
+
+                  <!-- review -->
+                  <p class="text-white mt-3">
+                    “Dev consistently delivers high-quality work across all his projects. His attention to detail and
+                    ability to understand requirements quickly make him a reliable contributor to any technical task.”
+                  </p>
+
+                  <!-- rating -->
+                  <span class="text-warning">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                  </span>
+
+                </div>
+
+                <div class="swiper-slide bg-dark-nevy mb-5 p-4 rounded">
+
+                  <!-- pfp-name -->
+                  <div class="d-flex gap-2 align-items-center">
+                    <div>
+                      <img class="slider-img" src="./assets/images/woman.png" alt="">
+                    </div>
+                    <div>
+                      <h5 class="mb-1 text-white">Stephani Tamakuvala</h5>
+                      <p class="mb-0">Lecturer</p>
+                    </div>
+                  </div>
+
+                  <!-- review -->
+                  <p class="text-white mt-3">
+                    “Dev shows a great sense of responsibility. When he commits to a deadline, he makes sure the work is
+                    completed on time with proper quality.”
+                  </p>
+
+                  <!-- rating -->
+                  <span class="text-warning">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                  </span>
+
+                </div>
+
+                <div class="swiper-slide bg-dark-nevy mb-5 p-4 rounded">
+
+                  <!-- pfp-name -->
+                  <div class="d-flex gap-2 align-items-center">
+                    <div>
+                      <img class="slider-img" src="./assets/images/woman1.png" alt="">
+                    </div>
+                    <div>
+                      <h5 class="mb-1 text-white">Mithila Sompuera</h5>
+                      <p class="mb-0">Lecturer</p>
+                    </div>
+                  </div>
+
+                  <!-- review -->
+                  <p class="text-white mt-3">
+                    “He communicates clearly and never hesitates to ask questions when needed. This quality helps him
+                    avoid mistakes and deliver better results.”
+                  </p>
+
+                  <!-- rating  -->
+                  <span class="text-warning">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                  </span>
+
+                </div>
+                <!-- slides ends -->
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </section>
+        <!-- testimonial ends -->
+
+        <!-- contact starts -->
+        <section id="contact" class="py-5 px-sm-5 px-2 bg-d-secondary text-grey">
+          <div class="container position-relative">
+            <!-- contact title -->
+            <p class="h1 text-white text-center mt-5 ">Get In Touch</p>
+
+            <!-- contact info -->
+            <div class="row mb-5">
+              <div class="col-md-4 mt-5 order-2 order-md-1">
+                <div class="contact-info-me text-white text-center text-md-start">
+                  <h5 class="mb-3">ADDRESS</h5>
+
+                  <p class="mb-4">4th Floor, Plot No.22,<br>
+                    145 Murphy Canyon Rd. <br>
+                    San Diego CA 2028</p>
+
+                  <p class="my-2">
+                    <span class="text-light-green me-2"><i class="ri-phone-fill"></i></span>+91 9313059290
+                  </p>
+                  <p class="my-2">
+                    <span class="text-light-green me-2"><i class="ri-mail-fill"></i></span>devmahidara05@gmail.com
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-md-8 mt-5 order-1 order-md-2 mx-auto">
+                <div class="form">
+                  <form action="" method="post">
+                    <h5 class="text-white mb-3">SEND US NOTE</h5>
+                    <div class="row mb-3">
+                      <div class="col-xl-6"><input class="form-control" name="name" type="text" placeholder="Name"
+                          required>
+                      </div>
+                      <div class="col-xl-6"><input class="form-control mt-xl-0 mt-3 " type="email" name="email"
+                          placeholder="Email" required></div>
+                      <div class="col"><textarea class="form-control mt-3" name="form-message" rows="5"
+                          placeholder="Tells us more about your needs......"></textarea></div>
+                    </div>
+                    <div class="text-md-start text-center">
+                      <button class="btn btn-success transition fs-5 px-4 py-2 rounded-5">Send Message</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </section>
+        <!-- services ends -->
+
+      </main>
+      <!-- main ends -->
+
+      <!-- footer starts -->
+      <footer class="bg-d-primary px-sm-5 px-2 py-5">
+        <div class="container d-md-flex justify-content-between">
+          <p class="text-white text-center ">
+            Copyright © 2025 <span class="text-light-green">DM</span>. All Rights Reserved.
+          </p>
+          <p class="text-white text-center mb-0">
+            Terms & Policy<span class="border-end border-secondary mx-2"></span>Disclaimer
+          </p>
+        </div>
+      </footer>
+      <!-- footer ends -->
+    </div>
+
+  </div>
+
+
+
+
+
+  <!-- bootstrap js cdn -->
+  <script src="./assets/JS/bootstrap.bundle.min.js"></script>
+
+  <!-- swiper slider cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+  <!-- Testimonial Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 2,
+          spaceBetween: 50,
+        },
+      },
+    });
+  </script>
+
+  <!-- skills swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper2", {
+      slidesPerView: 3,
+      spaceBetween: 20,
+      loop: true,
+      autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+      },
+      // pagination: {
+      //   el: ".swiper-pagination",
+      //   clickable: true,
+      // },
+      breakpoints: {
+        640: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        },
+      },
+    });
+  </script>
+
+  <!-- autoclose offcanvas after clicking any link -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Use only links inside the specific offcanvas (safer)
+      const offcanvasLinks = document.querySelectorAll('#offcanvasRight a.nav-link, #offcanvasRight a');
+
+      offcanvasLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          const offcanvasElement = document.querySelector('#offcanvasRight.show');
+          if (offcanvasElement) {
+            const offcanvas = bootstrap.Offcanvas.getInstance(offcanvasElement);
+            if (offcanvas) offcanvas.hide();
+          }
+        });
+      });
+    });
+  </script>
+
+
+</body>
+<!-- body ends -->
+
+</html>
