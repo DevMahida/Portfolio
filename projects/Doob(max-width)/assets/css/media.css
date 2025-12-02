@@ -1,0 +1,256 @@
+/* 
+xxl = 1320px
+xl = 1200px
+lg = 992px
+md = 768px
+sm = 576px 
+xsm = <= 576px
+
+*/
+
+
+
+@media (max-width: 1400px) {
+    .container{
+        max-width: 1140px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .container{
+        max-width: 992px;
+    }
+
+    .height-950{
+        height: auto;
+        padding: 300px 0;
+    }
+
+    .buy-btn{
+        display: none;
+    }
+
+    .banner .data h1{
+        font-size: 70px;
+        max-width: 450px;
+    }
+
+    .banner .data-p{
+        font-size: 22px;
+    }
+
+    /* -------- about --------- */
+    .col-padding-40{
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .col-lg-1{width: 8.33%;}
+    .col-lg-2{width: 16.67%;}
+    .col-lg-3{width: 25%;}
+    .col-lg-4{width: 33.33%;}
+    .col-lg-5{width: 41.67%;}
+    .col-lg-6{width: 50%;}
+    .col-lg-7{width: 58.33%;}
+    .col-lg-8{width: 66.67%;}
+    .col-lg-9{width: 75%;}
+    .col-lg-10{width: 83.33%;}
+    .col-lg-11{width: 91.67%;}
+    .col-lg-12{width: 100%;}
+
+    .container {
+        max-width: 720px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .menu-btn{
+        display: inline;
+    }
+    
+    .menus{
+        display: none;
+    }
+    
+    .height-950{
+        height: auto;
+        padding: 150px 0;
+    }
+    
+    .title{
+        font-size: 32px;
+    }
+
+    .section-padding-80{
+        padding: 80px 0;
+    }
+
+    /* ---------- Banner -------- */
+    
+    .banner .data{
+        padding-top: 80px;
+    }
+
+    .banner .data h1{
+        font-size: 65px;
+        max-width: 400px;
+    }
+
+    .banner .data-p{
+        font-size: 20px;
+        padding: 0 7.05px;
+    }
+
+    /* -------- project --------- */
+
+    .project{
+        padding: 80px 0 100px 0;
+    }
+
+    .project .menu-hover{
+        padding: 10px;
+    }
+
+    /* -------- about --------- */
+
+    .about{
+        padding: 80px 0 60px 0;
+    }
+
+    .col-7-padding-15{
+        padding:0 15px;
+    }
+
+    .col-padding-20{
+        padding: 0 20px;
+    }
+
+    .about .description{
+        font-size: 24px;
+    }
+
+    /* -------- contact --------- */
+    .col-marign-top-50{
+        margin-top: 50px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .col-md-1{width: 8.33%;}
+    .col-md-2{width: 16.67%;}
+    .col-md-3{width: 25%;}
+    .col-md-4{width: 33.33%;}
+    .col-md-5{width: 41.67%;}
+    .col-md-6{width: 50%;}
+    .col-md-7{width: 58.33%;}
+    .col-md-8{width: 66.67%;}
+    .col-md-9{width: 75%;}
+    .col-md-10{width: 83.33%;}
+    .col-md-11{width: 91.67%;}
+    .col-md-12{width: 100%;}
+
+    .container{
+        max-width: 540px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .banner{
+        height: 100vh;
+    }
+
+    .height-950{
+        height: auto;
+        padding: 150px 0;
+    }
+
+    .banner .data h1{
+        font-size: 50px;
+        max-width: 350px;
+    }
+
+    .banner .br-text{
+        font-size: 65px;
+    }
+
+    .banner .data-p{
+        line-height: 32px;
+        padding: 0 7.05px;
+    }
+
+    .section-padding-60{
+        padding: 60px 0;
+    }
+
+    .title{
+        font-size: 28px;
+    }
+
+    /* -------- services --------- */
+
+    .services{
+        padding: 60px 0;
+    }
+
+    /* -------- project --------- */
+
+    .project{
+        padding: 60px 0 80px 0;
+    }
+
+
+    /* -------- about --------- */
+    .about{
+        padding: 60px 0 40px;
+    }
+
+    .overflow{
+        overflow: auto;
+    }
+
+    .col-padding-10{
+        padding: 0 10px;
+    }
+
+    .about-container{
+        max-width: 540px;
+        padding-left: 15px;
+        padding-right: 15px;
+        flex-direction: column-reverse;
+    }
+
+    /* -------- footer --------- */
+    .flex-768px{
+        flex-direction: column;
+    }
+
+    .footer .copyright{
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .col-sm-1{width: 8.33%;}
+    .col-sm-2{width: 16.67%;}
+    .col-sm-3{width: 25%;}
+    .col-sm-4{width: 33.33%;}
+    .col-sm-5{width: 41.67%;}
+    .col-sm-6{width: 50%;}
+    .col-sm-7{width: 58.33%;}
+    .col-sm-8{width: 66.67%;}
+    .col-sm-9{width: 75%;}
+    .col-sm-10{width: 83.33%;}
+    .col-sm-11{width: 91.67%;}
+    .col-sm-12{width: 100%;}
+
+    /* banner */
+    .banner .data h1,.data .br-text{
+        font-size: 30px;
+    }
+}

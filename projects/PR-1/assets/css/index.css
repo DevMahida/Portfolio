@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.top-section{
+    background-color: #e5e9e8;
+    padding: 50px;
+    background-image: url(../images/logo-Photoroom.png);
+    background-size:350px;
+
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.header h5{
+    margin: 10px;
+    color: #767a7f;
+}
+
+.search{
+    margin-top: 20px;
+    background-color: #FFF;
+    width: 290px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.search i{
+    color: #767a7f;
+}
+
+.search input{
+    width: 250px;
+    border: none;
+}
+
+.attributes {
+    margin-top: 50px;
+}
+
+.attributes span{
+    margin-left: 20px;
+}
+
+.attributes-list{
+    display: inline-block;
+    margin-left: 1100px;
+}
+
+.attributes-list select{
+    border: none;
+    padding: 0 10px;
+}
+
+.container{
+    display: inline-block;
+    border: 1px solid #656565;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+.product{
+    border: 1px solid rgb(101, 101, 101);
+    display: inline-block;
+    padding: 20px;
+    width: 24%;
+    border-radius: 5px;
+    margin: 5px 3px;
+}
+
+.product button{
+    border: none;
+    color: #FFF;
+    background-color: #29de0d;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.product p{
+    color: #767a7f;
+}
+
+.star{
+    color: #debf0d;
+}
+
+.rating{
+    color: #767a7f;
+}
+
+.price s{
+    color: #767a7f;
+}
+
+.product-container{
+    padding: 50px;
+}
+
+.button{
+    margin-left: 160px;
+}

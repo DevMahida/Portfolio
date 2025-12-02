@@ -1,0 +1,274 @@
+::selection {
+    background-color: var(--btn-br-green);
+    color: var(--color-white);
+}
+
+:root {
+    --bk-text-color: #292d32;
+    --text-grey: #898f94;
+    --color-white: #FFF;
+}
+
+
+/* Hover color */
+#side-navbar .nav-link:hover,
+#header-navbar .nav-link:hover {
+    color: var(--btn-br-green) !important;
+}
+
+/* Active color */
+#side-navbar .nav-link.active,
+#header-navbar .nav-link.active {
+    color: var(--btn-br-green) !important;
+    font-weight: 600;
+}
+
+.bg-d-primary {
+    background-color: #212529;
+}
+
+.bg-d-secondary {
+    background-color: #343a40;
+}
+
+.bg-slide {
+    background-color: #111418;
+}
+
+.bg-dark-nevy {
+    background-color: var(--bg-primary);
+}
+
+.text-grey {
+    color: var(--text-grey);
+}
+
+.text-light-green {
+    color: var(--btn-br-green) !important;
+}
+
+.bg-light-green {
+    background-color: var(--btn-br-green) !important;
+}
+
+.transition {
+    transition: all 0.2s linear;
+}
+
+.w-10 {
+    width: 10%;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+/* ############################################
+                        CSS
+############################################### */
+
+.side-header {
+    height: 100vh !important;
+    background-color: var(--bg-primary);
+    color: var(--bs-white);
+}
+
+.info-card .img-br {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.info-card img {
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 8px solid var(--br-color-grey);
+}
+
+.bg-primary-dark {
+    background-color: #111418;
+}
+
+.opacity-95 {
+    opacity: 0.95;
+}
+
+/* banner */
+
+.banner-section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url('../images/banner-img1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.banner-section::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0606067b;
+}
+
+/* services  */
+
+.service-card-icon {
+    height: 75px;
+}
+
+/* resume */
+.resume-card {
+    background-color: var(--bg-primary);
+}
+
+.resume-card .badge {
+    letter-spacing: 2px;
+}
+
+/* portfolio */
+
+.project-card {
+    transition: all 0.2s linear;
+    transform: scale(1.0);
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+
+/* testimonial */
+
+/* Ensure flex main can shrink and keep side header fixed */
+.side-header {
+  flex: 0 0 250px;
+  max-width: 250px;
+}
+
+.main-footer-wrapper {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+/* Make Swiper elements behave & not force overflow */
+.swiper, .swiper-wrapper, .swiper-slide {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.swiper-slide {
+  min-width: 0;
+}
+
+/* Make images inside slides responsive */
+.swiper img, .project-card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* Ensure flex main can shrink and keep side header fixed */
+.side-header {
+  flex: 0 0 250px;
+  max-width: 250px;
+}
+
+.main-footer-wrapper {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+/* Make Swiper elements behave & not force overflow */
+.swiper, .swiper-wrapper, .swiper-slide {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.swiper-slide {
+  min-width: 0;
+}
+
+/* Make images inside slides responsive */
+.swiper img, .project-card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+/* Ensure flex main can shrink and keep side header fixed */
+.side-header {
+  flex: 0 0 250px;
+  max-width: 250px;
+}
+
+.main-footer-wrapper {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+/* Make Swiper elements behave & not force overflow */
+.swiper, .swiper-wrapper, .swiper-slide {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.swiper-slide {
+  min-width: 0;
+}
+
+/* Make images inside slides responsive */
+.swiper img, .project-card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.slider-img{
+
+    border-radius: 50% !important;
+    width:64px !important;
+    height:64px !important;
+    }
+
+/* contact */
+
+.form .form-control {
+    border-color: #232a31;
+    background: #232a31;
+    color: #fff;
+}
+
+.form .form-control::placeholder {
+    color: #86909b;
+}
+
+
+/* Ensure flex main can shrink and keep side header fixed */
+.side-header {
+  flex: 0 0 250px;
+  max-width: 250px;
+}
+
+.main-footer-wrapper {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+/* Make Swiper elements behave & not force overflow */
+.swiper, .swiper-wrapper, .swiper-slide {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.swiper-slide {
+  min-width: 0;
+}
+
+/* Make images inside slides responsive */
+.swiper img, .project-card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
