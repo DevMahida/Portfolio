@@ -67,10 +67,23 @@
                         CSS
 ############################################### */
 
+/* ----------- side header ------------- */
+
 .side-header {
     height: 100vh !important;
     background-color: var(--bg-primary);
     color: var(--bs-white);
+}
+
+/* Ensure flex main can shrink and keep side header fixed */
+.side-header {
+  flex: 0 0 250px;
+  max-width: 250px;
+}
+
+.main-footer-wrapper {
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 .info-card .img-br {
@@ -199,16 +212,6 @@
   height: auto;
   display: block;
 }
-/* Ensure flex main can shrink and keep side header fixed */
-.side-header {
-  flex: 0 0 250px;
-  max-width: 250px;
-}
-
-.main-footer-wrapper {
-  flex: 1 1 auto;
-  min-width: 0;
-}
 
 /* Make Swiper elements behave & not force overflow */
 .swiper, .swiper-wrapper, .swiper-slide {
@@ -271,4 +274,11 @@
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+
+/* ---------------------- Modal ------------------- */
+
+.w-600px{
+  width: 700px !important;
 }
