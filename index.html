@@ -551,13 +551,13 @@
                   <span class="mx-auto">Flexbox: flex-grow & flex-shrink </span>
                 </div>
               </div>
-              <!-- <div class="col-sm-6 col-lg-4">
+              <div class="col-sm-6 col-lg-4">
                 <div class="project-card rounded-2 overflow-auto text-center text-white bg-dark-nevy p-4"
-                  data-bs-toggle="modal" data-bs-target="#flex-box-modal">
+                  data-bs-toggle="modal" data-bs-target="#github-deploy-html">
                   <img class="rounded-2 mb-3" src="./assets/images/github-deploy(model-img-logo).png" alt="">
-                  <span class="mx-auto">Deploying a Website on GitHub Pages - Beginner Guide</span>
+                  <span class="mx-auto">Deploying a HTML Website on GitHub Pages - Beginner Guide</span>
                 </div>
-              </div> -->
+              </div>
 
             </div>
         </section>
@@ -892,7 +892,6 @@ z-index: 5;
   </div>
   <!-- Z-index Modal ends  -->
 
-
   <!-- flex-grow/shrink Modal starts  -->
   <div class="modal fade bg-dark" id="flex-box-modal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
@@ -1068,6 +1067,149 @@ z-index: 5;
     </div>
   </div>
   <!-- flex-grow/shrink Modal ends  -->
+
+  <!-- github-deploy-html modal starts  -->
+  <div class="modal fade bg-dark" id="github-deploy-html" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+      <div class="modal-content bg-slide">
+
+        <!-- modal header -->
+        <div class="modal-header">
+          <h1 class="modal-title h3 text-white" id="exampleModalLabel">Deploying a HTML Website on GitHub Pages -
+            Beginner Guide</h1>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <!-- modal body -->
+        <div class="modal-body">
+
+          <!-- Introduction -->
+          <div class="text-white mt-4">
+            <h4>Introduction</h4>
+            <p>
+              GitHub Pages is a free service that lets you host static websites directly from a GitHub repository.
+              It's perfect for portfolios and small HTML/CSS/JS projects — no server or paid hosting required.
+            </p>
+          </div>
+
+          <!-- Step 1 -->
+          <div class="text-white mt-4">
+
+            <h4>Step 1: Create a Repository</h4>
+            <p>
+              Create a new public repository on GitHub where your project files will live.
+            </p>
+            <ul>
+              <li>Go to <code>github.com</code> and sign in</li>
+              <li>Click <strong>New repository</strong></li>
+              <li>Enter a repository name</li>
+              <li>Keep the repository <strong>Public</strong></li>
+              <li>Click <strong>Create repository</strong></li>
+            </ul>
+            <div>
+              <img src="./assets/images/github-new-repo.png" alt="" width="100%">
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="text-white mt-4">
+            <h4>Step 2: Add Your Project Files</h4>
+            <p>
+              Upload your website files to the repository. Ensure your entry file is named <code>index.html</code>.
+              A typical project structure looks like this:
+            </p>
+
+            <pre class="ms-4 mb-3"><code>
+my-project/
+  index.html
+  assets/
+    css/
+    images/
+  script.js
+  </code></pre>
+
+            <p>
+              Add any CSS, images, and JavaScript inside the repository so the site can load correctly.
+            </p>
+
+            <div>
+              <img src="./assets/images/github-project.png" alt="" width="100%">
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="text-white mt-4">
+            <h4>Step 3: Enable GitHub Pages</h4>
+            <p>
+              Turn on GitHub Pages from your repository settings so GitHub serves your site.
+            </p>
+            <ul>
+              <li>Open your repository on GitHub</li>
+              <li>Click <strong>Settings</strong></li>
+              <li>From the left menu, click <strong>Pages</strong></li>
+              <li>Under <strong>Source</strong>, select the <code>main</code> branch</li>
+              <li>Choose the <code>/root</code> folder</li>
+              <li>Click <strong>Save</strong></li>
+            </ul>
+            <p>GitHub Pages will start building your site immediately.</p>
+            <div>
+              <img src="./assets/images/github-pages.png" alt="github-iamges" width="100%">
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="text-white mt-4">
+            <h4>Step 4: Get Your Website Link</h4>
+            <p>
+              After a few seconds you’ll see a live link (green notification). It usually looks like:
+            </p>
+
+            <pre class="ms-4 mb-3"><code>
+https://yourusername.github.io/repository-name
+  </code></pre>
+
+            <p>Click the link to open your live website.</p>
+            <div>
+              <img src="./assets/images/github-link.png" alt="github-link" width="100%">
+            </div>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="text-white mt-4">
+            <h4>Step 5: Update Your Website</h4>
+            <p>
+              To change your site later, edit files and push updates to the same repository. GitHub Pages will
+              automatically
+              rebuild and publish the latest version.
+            </p>
+          </div>
+
+          <!-- Why GitHub Pages -->
+          <div class="text-white mt-4">
+            <h4>Why GitHub Pages?</h4>
+            <ul>
+              <li>Free hosting for static sites</li>
+              <li>Easy to use with Git and GitHub</li>
+              <li>Perfect for portfolios, demos, and small projects</li>
+              <li>Supports custom domains if needed</li>
+            </ul>
+            <p class="mb-0">
+              For a personal touch, add a short note like: “I host my portfolio and mini-projects on GitHub Pages to
+              share work quickly and for free.”
+            </p>
+          </div>
+
+        </div>
+
+        <!-- modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- github-deploy-html Modal ends  -->
 
 
 
