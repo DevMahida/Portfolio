@@ -146,12 +146,12 @@
 
 /* portfolio */
 
-.project-card {
+.transform {
     transition: all 0.2s linear;
     transform: scale(1.0);
 }
 
-.project-card:hover {
+.transform:hover {
     transform: scale(1.05);
 }
 
