@@ -536,7 +536,13 @@
 
             <!-- Blogs info -->
             <div class="row mb-5 gy-4 justify-content-lg-between">
-
+              <div class="col-sm-6 col-lg-4">
+                <div class="project-card rounded-2 overflow-auto text-center text-white bg-dark-nevy p-4"
+                  data-bs-toggle="modal" data-bs-target="#unit-modal">
+                  <img class="rounded-2 mb-3" src="./assets/images/px,em,rem-modal.png" alt="">
+                  <span class="mx-auto">rem vs em vs px — Which Unit Should You Use?</span>
+                </div>
+              </div>
               <div class="col-sm-6 col-lg-4">
                 <div class="project-card rounded-2 overflow-auto text-center text-white bg-dark-nevy h-100 p-4"
                   data-bs-toggle="modal" data-bs-target="#z-index-modal">
@@ -558,6 +564,7 @@
                   <span class="mx-auto">Deploying a HTML Website on GitHub Pages - Beginner Guide</span>
                 </div>
               </div>
+
 
             </div>
         </section>
@@ -746,6 +753,133 @@
 
 
 
+
+  <!-- Unit Modal starts  -->
+  <div class="modal fade bg-dark" id="unit-modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+      <div class="modal-content bg-slide">
+
+        <!-- modal header -->
+        <div class="modal-header">
+          <h1 class="modal-title h3 text-white" id="exampleModalLabel">What is Z-Index? Why Elements Overlap</h1>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <!-- modal body -->
+        <div class="modal-body">
+
+          <!-- image -->
+          <div class="mb-4">
+            <img src="./assets/images/px,em,rem-modal(inner).png" alt="" width="100%">
+          </div>
+
+          <!-- Introduction -->
+          <div class="text-white mt-4">
+            <h4>Introduction</h4>
+            <p>
+              In CSS, units decide how large text, spacing, or elements appear.
+              The most commonly used units are <code>px</code>, <code>em</code>, and <code>rem</code>.
+              They may look similar but behave very differently, especially in responsive design.
+            </p>
+          </div>
+
+          <!-- px -->
+          <div class="text-white mt-4">
+            <h4>1. px (Pixels)</h4>
+            <p>
+              <code>px</code> is an absolute unit. It does not scale with screen size or parent font-size.
+            </p>
+
+            <p class="fw-medium mb-1">When to use px:</p>
+            <ul>
+              <li>Icons</li>
+              <li>Borders</li>
+              <li>Fixed-size UI elements</li>
+            </ul>
+
+            <p class="mb-0">Drawback: not very responsive.</p>
+          </div>
+
+          <!-- em -->
+          <div class="text-white mt-4">
+            <h4>2. em</h4>
+            <p>
+              <code>em</code> is a relative unit. It depends on the font-size of the <strong>parent element</strong>.
+            </p>
+
+            <p class="fw-medium mb-1">Example behavior:</p>
+            <pre class="ms-4 mb-3"><code>
+/* If parent font-size = 20px */
+.child {
+  font-size: 1.5em;  /* = 30px */
+}
+  </code></pre>
+
+            <p class="fw-medium mb-1">When to use em:</p>
+            <ul>
+              <li>Padding and margin that scale with text</li>
+              <li>Components inside components</li>
+            </ul>
+
+            <p class="mb-0">Drawback: can “multiply” because it inherits from parent.</p>
+          </div>
+
+          <!-- rem -->
+          <div class="text-white mt-4">
+            <h4>3. rem (root em)</h4>
+            <p>
+              <code>rem</code> is relative to the <strong>root html font-size</strong>, not the parent.
+              This makes it predictable and perfect for responsive layouts.
+            </p>
+
+            <p class="fw-medium mb-1">Example:</p>
+            <pre class="ms-4 mb-3"><code>
+/* If html font-size = 16px */
+.text {
+  font-size: 2rem;  /* = 32px */
+}
+  </code></pre>
+
+            <p class="fw-medium mb-1">When to use rem:</p>
+            <ul>
+              <li>Font sizes</li>
+              <li>Layout spacing</li>
+              <li>Responsive UI</li>
+            </ul>
+
+            <p class="mb-0">Developers prefer rem for its consistency.</p>
+          </div>
+
+          <!-- Comparison -->
+          <div class="text-white mt-4">
+            <h4>Quick Comparison</h4>
+            <ul>
+              <li><strong>px</strong> → fixed size, does not scale</li>
+              <li><strong>em</strong> → relative to parent font-size</li>
+              <li><strong>rem</strong> → relative to root font-size</li>
+            </ul>
+          </div>
+
+          <!-- Where used -->
+          <div class="text-white mt-4">
+            <h4>Where You Use This in Real Projects</h4>
+            <p>
+              In your portfolio, many text and spacing values would work better with <code>rem</code>
+              because it scales consistently and avoids unexpected double-scaling that can happen with <code>em</code>.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- Unit Modal ends  -->
 
   <!-- Z-index Modal starts  -->
   <div class="modal fade bg-dark" id="z-index-modal" tabindex="-1" aria-hidden="true">
