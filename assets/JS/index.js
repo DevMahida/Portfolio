@@ -29,9 +29,7 @@ let cYear = document.getElementById("c-year");
 cYear.innerHTML = year;
 
 //autoclose offcanvas after clicking any link
-
 document.addEventListener('DOMContentLoaded', function () {
-    // Use only links inside the specific offcanvas (safer)
     const offcanvasLinks = document.querySelectorAll('#offcanvasRight a.nav-link, #offcanvasRight a');
 
     offcanvasLinks.forEach(link => {
