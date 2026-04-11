@@ -1,0 +1,824 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/* ========== Do Not Touch In Css Strat ========== */
+@import url("reset.css");
+@import url("fonts.css");
+@import url("base.css");
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+@import url(https://fonts.googleapis.com/css?family=Pathway+Gothic+One);
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans);
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('../fonts/opensans-regular.eot');
+    src: url('../fonts/opensans-regular.eot') format('embedded-opentype'),
+         url('../fonts/opensans-regular.woff') format('woff'),
+         url('../fonts/opensans-regular.ttf') format('truetype'),
+         url('../fonts/opensans-regular.svg#OpenSansRegular') format('svg');
+}
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url('../fonts/opensans-light.eot');
+    src: url('../fonts/opensans-light.eot') format('embedded-opentype'),
+         url('../fonts/opensans-light.woff') format('woff'),
+         url('../fonts/opensans-light.ttf') format('truetype'),
+         url('../fonts/opensans-light.svg#OpenSansLight') format('svg');
+}
+@font-face {
+    font-family: 'Pathway Gothic One';
+    src: url('../fonts/pathwaygothicone-regular.eot');
+    src: url('../fonts/pathwaygothicone-regular.eot') format('embedded-opentype'),
+         url('../fonts/pathwaygothicone-regular.woff') format('woff'),
+         url('../fonts/pathwaygothicone-regular.ttf') format('truetype'),
+         url('../fonts/pathwaygothicone-regular.svg#PathwayGothicOneRegular') format('svg');
+}
+@font-face {
+    font-family: 'Droid Sans';
+    src: url('../fonts/droidsans.eot');
+    src: url('../fonts/droidsans.eot') format('embedded-opentype'),
+         url('../fonts/droidsans.woff') format('woff'),
+         url('../fonts/droidsans.ttf') format('truetype'),
+         url('../fonts/droidsans.svg#DroidSansRegular') format('svg');
+}
+body{}
+p {margin:0px; padding:0px 0px 18px 0px; line-height:20px;}
+#page-wrap {width:957px; margin:0px auto;}
+.floatleft {float:left;}
+.floatright {float:right;}
+.clear {clear:both;}
+.bold {font-weight:bold;}
+a {text-decoration:none; color:#016285;}
+a:hover, a.selected {text-decoration:none; color:#333333;}
+ul {list-style:none;}
+li {list-style:none;}
+/* ========== Do Not Touch In Css End ========== */
+
+/* ------- Top Area Strat ------- */
+#header{ padding:18px 2.173913043478261% 16px 2.173913043478261%; font-family: 'OpenSansLight', sans-serif;}
+.logo{ float:left; width:25.04347826086957%}
+.logo img{ max-width:100%;/* min-width:150px;*/}
+.topright{ float:right; text-align:right; width:10%}
+.topright ul{ float:right;}
+.topright ul li{ float:left;}
+.topright ul li img{ max-width:100%;}
+.topright ul li strong{ font-family: 'OpenSansRegular', sans-serif; color:#397F12; font-size:18px;}
+.topright ul li.token_no{ font-size:15px; padding:15px 0px 0px 0px;}
+.topright ul li.token_no img{ margin-right:10px;}
+.topright ul li.token_no span{ float:left; line-height:35px;}
+.topright ul li.gmcapplication{font-family: 'Pathway Gothic One', sans-serif; text-align:center; font-size:23px; color:#729199; background:url(../../images/vr_line.png) repeat-y left top; padding:0px 0px 0px 20px; margin-left:20px; width:20%;}
+.topright ul li.gmcapplication img{ max-width:100%; }
+.topright ul li.gmcapplication span{ float:none; font-size:41px; color:#003885;}
+.topright ul li.gmcapplication span span{ color:#3A8012;}
+
+
+.token_no{ font-size:15px; padding:15px 0px 0px 0px; float:right;}
+.token_no img{ margin-right:10px;}
+.token_no span{ float:left; line-height:35px;}
+.gmcapplication{ float:right;font-family: 'Pathway Gothic One', sans-serif; text-align:left; font-size:23px; color:#729199; background:url(../../images/vr_line.png) repeat-y left top; padding:0px 0px 0px 20px; margin-left:20px; width:100%;}
+.gmcapplication img{ max-width:100%; }
+.gmcapplication span{ float:none; font-size:41px; color:#003885;}
+.gmcapplication span span{ color:#3A8012;}
+/* ------- Top Area End ------- */
+
+/* ------- Navigation Area Strat ------- */
+/* ------- Navigation Area End ------- */
+
+/* ------- Pages Contener Area Strat ------- */
+/* ..... Home Page Contener Area Strat ..... */
+.mpcontenerhome{ background-image: url(../../images/maiddal_img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover; /*height:525px;*/}
+  .mpcontenerlogo{ background-image: url(../../images/login_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;/* height:525px;*/}
+.mpcontenetarea{ padding:29px 2.173913043478261%; min-height:500px;}
+.hmli{ display:inline-block;padding-bottom:20px;/* width:44.34782608695652%; */}
+.hmli li{font-family: 'OpenSansLight', sans-serif; font-size:30px; color:#333333; padding:0px 0px 0px 20px; margin-bottom:18px; background:url(../../images/icon_arrow.png) no-repeat right;}
+.hmli li:hover{ background:url(../../images/icon_arrow_hover.png) no-repeat right;}
+.hmli li span{ float:left;}
+.hmli li span img{ max-width:100%;}
+.hmli li span.icons{ width:32px; padding-top:5px;}
+.hmli li span.sapanright{ float:right; padding-top:15px;}
+.hmli li span.text{ font-family: 'OpenSansLight', sans-serif; font-size:30px; color:#333333; padding:0px 20px 0px 20px;}
+.hmli li a{ color:#333333; display:block; padding-left:53px; padding-right:30px;height:36px; display:table-cell; vertical-align:middle;}
+
+.newhmli li,.newhmli li:hover {background:none;}
+.newhmli li .hdname{ background: url(../../images/icon_arrow.png) no-repeat right; display:inline-block;}
+.newhmli li .hdname:hover{ background: url(../../images/icon_arrow_hover.png) no-repeat right;}
+.hmli li.provisional_registration_icon a { background: url(../../images/icon_1.png) no-repeat left;}
+.panel-body.content_accordint{min-height:100px;}
+.content_accordint ol, .content_accordint ol li {
+	list-style-type: lower-alpha;
+}
+.content_accordint ol { padding-left:10px; padding-bottom:7px;}
+.newhmli li .btn_li { padding-left: 0px;}
+.content_accordint ol li { padding-left:0px; font-size:15px;font-weight: 600; line-height:1.4; margin-bottom:13px;}
+.newhmli li .btn-dark-grey, .newhmli li .btn-dark-grey:hover {
+		background: #333 !important;
+		border-color: #333 !important;
+		color: #ffffff !important;
+		padding: 6px 12px !important;
+	}
+a:hover, a:focus{ text-decoration:none;}
+.content_accordint {
+	padding-left: 57px; padding-right:0px;
+}
+.content_accordint, .content_accordint p { font-size:15px;font-weight: 600;line-height: 1.56;}
+.newhmli .panel { border:none; border-radius:0px; box-shadow:none;}
+
+.hmli li.provisional_registration_icon:hover a {
+	background: url(../../images/icon_1_hover.png) no-repeat left;
+}
+.hmli li.permanent_registration_icon a{ background:url(../../images/icon_2.png) no-repeat left ;}
+.hmli li.permanent_registration_icon:hover a{ background:url(../../images/icon_2_hover.png) no-repeat left ;}
+.hmli li.additional_degree_registration_icon a{ background:url(../../images/icon_3.png) no-repeat left ;}
+.hmli li.additional_degree_registration_icon:hover a{ background:url(../../images/icon_3_hover.png) no-repeat left ;}
+.hmli li.good_standing_certificate_icon a{ background:url(../../images/icon_4.png) no-repeat left ;}
+.hmli li.good_standing_certificate_icon:hover a{ background:url(../../images/icon_4_hover.png) no-repeat left ;}
+.hmli li.change_request_icon a{ background:url(../../images/icon_5.png) no-repeat left ;}
+.hmli li.change_request_icon:hover a{ background:url(../../images/icon_5_hover.png) no-repeat left ;}
+.hmli li.rescheduleicon a{ background:url(../../images/reschedule_icon_blue.png) no-repeat left ;}
+.hmli li.rescheduleicon:hover a{ background:url(../../images/reschedule_icon_red.png) no-repeat left ;}
+
+
+
+h1{font-family: 'OpenSansLight', sans-serif; font-size:30px; color:#333333; padding:0px 0px 30px 35px!important; font-weight:normal!important;}
+h1.icon1{ background:url(../../images/icon_1.png) no-repeat left top;}
+h1.icon2{ background:url(../../images/icon_2.png) no-repeat left top;}
+h1.icon3{ background:url(../../images/icon_3.png) no-repeat left top;}
+h1.icon4{ background:url(../../images/icon_4.png) no-repeat left top;}
+h1.icon5{ background:url(../../images/icon_5.png) no-repeat left top;}
+h1.rescheduleicon{ background:url(../../images/reschedule_icon_blue.png) no-repeat left 5px; padding-left:35px!important;}
+
+.linearea{ padding:0px 0px 20px 0px;}
+.linearea span{ border-bottom:#F0483E solid 1px; display:inline-block; min-width:100px; height:2px;}
+.hmtext{ font-family: 'OpenSansLight', sans-serif; font-size:16px;}
+
+.loginarea{background:#ffffff; padding:10px; margin:20px auto 40px auto;-moz-box-shadow: 0 0 10px #cccccc;
+   -webkit-box-shadow: 0 0 10px #cccccc;
+   box-shadow: 0 0 10px #cccccc; width:35.56521739130435%; float:right;}
+.left {margin:0px;float:left;}  
+   
+   .loginsection{font-family: 'OpenSansLight', sans-serif;}
+   .registrationdetail .appformfield .form-group{margin-bottom:0px!important;}
+   .loginttl{ padding-bottom:40px;}
+   .loginttl span{ float:left; font-size:25px; color:#333333; display:inline-block;}
+   .loginttl span img{ max-width:100%; margin-top:5px; margin-right:15px;}
+	.logniarea {padding:15px 15px 0px 15px;}
+.logniarea ul{margin:0px 0px 28px; padding:0px;}
+.logniarea ul li{margin-bottom:14px;font-family: 'OpenSansRegular', sans-serif; font-size:13px;}
+.logniarea ul li span{display:block; font-size:13px;}
+.tbnsubmit{ margin:10px 0px 0px 0px; width:100%; max-width:184px; min-width:100px;}
+.marbottom15{margin-bottom:15px!important;}
+.logintext{font-family: 'OpenSansRegular', sans-serif; font-size:13px; background:#ffffff; color:#D5D5D5; border:1px solid #c5c5c5; padding:8px; width:95%; margin:5px 0px 5px; color:#878787;}
+.spicalleft{ float:left; width:50%;}
+.logniarea ul li .spicalleft span{ float:left; display:inline-block; line-height:13px; font-size:11px; margin-right:8px;}
+.spicalright{ float:left; width:50%; text-align:right; font-size:11px;}
+.spicalright a{ color:#4B4B4B; text-decoration:underline;}
+.submitbtn{ width:50%;}
+.padding50{ padding:50px 0px!important;}
+a.linktext{color:#06C; text-decoration:underline;}
+
+.loginpage .mpcontenetarea .panel{max-width:545px!important; margin:0px auto; background:url(../../images/white_transback.png) repeat left top; }
+.signuppage .mpcontenetarea .panel{max-width:600px!important; margin:0px auto; background:url(../../images/white_transback.png) repeat left top; }
+.
+/****************** tab ****************/
+.ajax__tab_xp .ajax__tab_header {
+ padding-left:10px;
+ font-size:12px!important;
+}
+
+.ajax__tab_inner, .ajax__tab_tab, .ajax__tab_outer
+{
+ background:none !important;
+ background:#EBEDF1 !important;
+ padding:0px 10px 0px 10px;
+ color:#000;
+}
+.ajax__tab_hover .ajax__tab_inner, .ajax__tab_hover .ajax__tab_tab,.ajax__tab_hover .ajax__tab_outer
+{
+ background:none !important;
+ background:#c9c5a8 !important;
+ color:#000;
+ padding:0px 10px 0px 10px;
+}
+.ajax__tab_tab
+{
+ margin-top:10px;
+}
+.ajax__tab_active .ajax__tab_inner, .ajax__tab_active .ajax__tab_tab,.ajax__tab_active .ajax__tab_outer
+{
+ background:none !important;
+ background:#ffffff !important;
+ color:#000000;
+ padding:0px 10px 0px 10px;
+}
+.ajax__tab_xp .ajax__tab_outer{height:27px!important; border-top:1px solid #999999 ; border-left:1px solid #999999; border-right:1px solid #999999; margin-right:4px;}
+
+
+table.formtable h3{
+    color: #800000; font-size:16px;
+}
+table.formtable{font-weight:normal; font-size:12px;}
+.ajax__tab_xp .ajax__tab_body{padding:15px 15px!important; border-top: 1px solid #999999!important; margin-top: -4px;}
+body .ajax__tab_body{ color: #333;}
+.ajax__tab_xp .ajax__tab_tab{ height:auto !important;}
+.ajax__tab_xp .ajax__tab_inner{ background:none!important; line-height: normal;}
+.btngotohome{width:100%; text-align:center; margin-top:100px;}
+.btngotohome a{  font-size: 18px; padding: 12px 50px !important;}
+
+/* ..... Home Page Contener Area End ..... */
+
+/* ..... Inner Page Contener Area Strat ..... */
+/* ..... Inner Page Contener Area End ..... */
+/* ------- Pages Contener Area End ------- */
+
+/* ------- Footer Area Strat ------- */
+#footet{ font-size:11px; padding:25px 2.173913043478261%;font-family: 'Droid Sans', sans-serif;}
+#footet a{ color:#333333;}
+.footetleft{ float:left; width:50%;}
+.footetright{ float:right; width:50%; text-align:right;}
+/* ------- Footer Area End ------- */
+.panel-body{min-height:340px;}
+.signuppage  .panel-body{min-height:500px;}
+.loginpage  .panel{ margin-top: 50px !important; min-height: 200px!important; padding-bottom: 30px;}
+ .loginpage  .mpcontenetarea .panel .panel-body{min-height:200px;}
+table.tabradio tr td{padding:0px 5px;}
+.loginpagebox label{font-size:15px; padding-right:15px;}
+.logniarea h3, .signuppage h3{margin-bottom:15px;}
+.loginpagebox .chkfloat{padding-top:10px; padding-bottom:15px;}
+.loginpagebox .chkfloat input[type="checkbox"]{margin-top:5px!important; float:left; margin-right:5px!important;}
+#dvcaptcha{background: rgba(0, 0, 0, 0) url("../../images/captcha.jpg") no-repeat scroll left top; 
+	float: left; font-size: 14px; font-style: italic; font-weight: bold; height: 25px; margin-right: 10px; 
+	padding-left: 20px; padding-top: 3px; width: 100px;}
+#btnrefresh{margin-top:5px; display:inline-block; cursor:pointer;}
+
+
+@media screen and (max-width:760px){
+	.loginpagebox tr td{display:block;}
+	.loginpagebox label{width:100%; text-align:left;}
+	}
+@media screen and (min-width : 400px)  and (max-width : 500px) {.hmli li{ font-size:16px;}}
+@media screen and (min-width : 100px)  and (max-width : 500px){.logo img{ width:70px!important; max-width:inherit;} .logo{ width:100%;}}
+@media screen and (min-width : 100px)  and (max-width : 399px) {.hmli li{ font-size:10px;} .hmtext{ font-size:11px;}}
+@media screen and (min-width : 10px)  and (max-width : 310px) {.tbnsubmit{ min-width:100%;}}
+
+nav ul { margin: 0;  padding: 0;  list-style: none;  position: relative;    background: #eee;  border-bottom: 1px solid #fff;	  -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
+	
+nav li { float: left; }
+nav .login { border-right: 1px solid #ddd;  -moz-box-shadow: 1px 0 0 #fff;  -webkit-box-shadow: 1px 0 0 #fff;  box-shadow: 1px 0 0 #fff; }
+nav .login-trigger,	nav .signup a {  display: inline-block;  *display: inline;  *zoom: 1;  height: 25px; line-height: 25px;  font-weight: bold;
+ padding: 0 8px;  text-decoration: none;  color: #444;  text-shadow: 0 1px 0 #fff; }
+nav .signup a { -moz-border-radius: 0 3px 3px 0;  -webkit-border-radius: 0 3px 3px 0;  border-radius: 0 3px 3px 0;		}
+nav .login-trigger { -moz-border-radius: 3px 0 0 3px;  -webkit-border-radius: 3px 0 0 3px;  border-radius: 3px 0 0 3px;	}
+nav .login-trigger:hover, nav .login .active, nav #signup a:hover { background: #fff;}
+nav .login-content { display: none;  position: absolute; top: 24px;	  right: 0;  z-index: 999; background: #fff; background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));	  background-image: -webkit-linear-gradient(top, #fff, #eee);		  background-image: -moz-linear-gradient(top, #fff, #eee); background-image: -ms-linear-gradient(top, #fff, #eee); background-image: -o-linear-gradient(top, #fff, #eee);  background-image: linear-gradient(top, #fff, #eee); padding: 15px;  -moz-box-shadow: 0 2px 2px -1px rgba(0,0,0,.9);  -webkit-box-shadow: 0 2px 2px -1px rgba(0,0,0,.9);  box-shadow: 0 2px 2px -1px rgba(0,0,0,.9);  -moz-border-radius: 3px 0 3px 3px;
+ -webkit-border-radius: 3px 0 3px 3px;  border-radius: 3px 0 3px 3px;}
+nav li .login-content { left:335px;  width: 270px;  }
+#inputs input {
+		  background: #f1f1f1;
+		  padding: 6px 5px;
+		  margin: 0 0 5px 0;
+		  width: 238px;
+		  border: 1px solid #ccc;
+		  -moz-border-radius: 3px;
+		  -webkit-border-radius: 3px;
+		  border-radius: 3px;
+		  -moz-box-shadow: 0 1px 1px #ccc inset;
+		  -webkit-box-shadow: 0 1px 1px #ccc inset;
+		  box-shadow: 0 1px 1px #ccc inset;
+		}
+		
+		#inputs input:focus {
+		  background-color: #fff;
+		  border-color: #e8c291;
+		  outline: none;
+		  -moz-box-shadow: 0 0 0 1px #e8c291 inset;
+		  -webkit-box-shadow: 0 0 0 1px #e8c291 inset;
+		  box-shadow: 0 0 0 1px #e8c291 inset;
+		}
+		
+		/*--------------------*/
+		
+		.login #actions {
+		  margin: 10px 0 0 0;
+		}
+		
+		.login #submit {		
+		  background-color: #d14545;
+		  background-image: -webkit-gradient(linear, left top, left bottom, from(#e97171), to(#d14545));
+		  background-image: -webkit-linear-gradient(top, #e97171, #d14545);
+		  background-image: -moz-linear-gradient(top, #e97171, #d14545);
+		  background-image: -ms-linear-gradient(top, #e97171, #d14545);
+		  background-image: -o-linear-gradient(top, #e97171, #d14545);
+		  background-image: linear-gradient(top, #e97171, #d14545);
+		  -moz-border-radius: 3px;
+		  -webkit-border-radius: 3px;
+		  border-radius: 3px;
+		  text-shadow: 0 1px 0 rgba(0,0,0,.5);
+		  -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+		  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+		  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;    
+		  border: 1px solid #7e1515;
+		  float: left;
+		  height: 30px;
+		  padding: 0;
+		  width: 100px;
+		  cursor: pointer;
+		  font: bold 14px Arial, Helvetica;
+		  color: #fff;
+		}
+		
+		.login #submit:hover,
+		.login #submit:focus {		
+		  background-color: #e97171;
+		  background-image: -webkit-gradient(linear, left top, left bottom, from(#d14545), to(#e97171));
+		  background-image: -webkit-linear-gradient(top, #d14545, #e97171);
+		  background-image: -moz-linear-gradient(top, #d14545, #e97171);
+		  background-image: -ms-linear-gradient(top, #d14545, #e97171);
+		  background-image: -o-linear-gradient(top, #d14545, #e97171);
+		  background-image: linear-gradient(top, #d14545, #e97171);
+		}	
+		
+		.login #submit:active {		
+		  outline: none;
+		  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+		  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+		  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;		
+		}
+		
+		.login #submit::-moz-focus-inner {
+		  border: none;
+		}
+		
+		.login label {
+		  float: right;
+		  line-height: 30px;
+		}
+		
+		.login label input {
+		  position: relative;
+		  top: 2px;
+		  right: 2px;
+		}
+		.info_text{font-family: 'OpenSansLight'; font-size:50px; color:#333; text-align:center; text-transform:uppercase; padding-bottom:30px;}
+
+        .modalBackground
+        {
+            z-index: 8010;
+background: rgba(000, 000, 000, 0.7);
+           
+        }
+span.certi_msg{font-weight:bold; color:#1C376C; vertical-align:top; font-size:10pt;}
+.alert ul{margin:6px 0px 0px 6px; padding:0px;}
+.alert ul li{  background: rgba(0, 0, 0, 0) url("../../images/green_dot.png") no-repeat scroll left 5px;
+    padding-left: 12px; line-height:15px; margin-bottom:6px;}		
+.alert ul li input[type="submit"]{border:0px!important; background:none!important; color:#0098d0!important; text-decoration:underline;} 
+
+.ajax__tab_xp .ajax__tab_header{display: flex;}
+.ajax__tab_xp .ajax__tab_header span.tabdeactive{border-top:1px solid #ccc!important;  border-right:1px solid #ccc!important;    border-left:1px solid #ccc!important;     cursor:auto;
+    display: inline-block; margin-right: 4px; height:26px; line-height: normal; overflow: hidden; text-align: center; margin: 0; color:#c0c0c0!important; padding: 4px 12px; margin-right: 4px;}
+.ajax__tab_xp .ajax__tab_header span.tabdeactive:last-child{ margin-right: 0px;}
+.ajax__tab_xp .ajax__tab_outer{border-bottom:1px solid #ccc!important;}
+.ajax__tab_xp .ajax__tab_active  .ajax__tab_outer{border-bottom:0px solid #ccc!important;}
+	.topright a{padding-right:50px; display:inline-block;}
+	.toprighttext{ float: right;  font-size: 16px;  padding-top: 11px; text-align: right; width: 50%;}
+	.btnfeedback{margin-left:10px; font-size:13px; border:1px solid #56698f; padding:6px 12px; border-radius:5px; background:#56698f; color:#fff;}
+	.btnfeedback:hover{color:#fff; background:#6377a0;}
+.radio table tr {width:60px!important; float:left; font-size:15px;}
+.ajax__tab_panel .radio table tr {width:100%!important; float:none; font-size:13px;}
+
+.radio table tr td input[type="radio"]{vertical-align:middle; margin-top:6px; float:left;}
+.regnumberbox{color:#205780; font-size:15px; font-weight:bold;}
+.buttonboxmain { float: left;  margin-top: 12px;}
+.buttonboxmain a{ background-color: orangered; color: #fff; padding: 10px 30px; font-size: 16px; 
+	font-weight: 600; border-radius: 5px; margin-top: 0; }
+.buttonboxmain a:hover {opacity:0.8; }
+#ctl00_ContentPlaceHolder1_divprovisional .form-group .control-label{ padding-top: 10px;}
+#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelBookApppointment_BookAppointment1 .form-group .control-label:first-child {
+	width: 30%;
+}
+#ctl00_ContentPlaceHolder1_divprovisional .appformfield h3{ padding-top: 25px;  }
+.w-500{ max-width: 540px; margin: 0 auto; margin-bottom: 20px; margin-top: 0px;}
+.w-500 .tblcalender .tblcalender{ padding-top: 20px;}
+#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelBookApppointment_bookapnt .detailinfo{ padding-bottom: 10px;}
+.btnprv{ margin-left: 10px;}
+.btnnext{ margin-right: 10px;} 
+
+#header .btnfeedback {
+	display: none;
+}
+        #header{ display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;}
+        #header .toprighttext .btnfeedback{ display: block; width: fit-content; margin-left: auto; margin-top: 5px;}
+
+				#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelBookApppointment_onlinepayment h1{ font-size: 18px; line-height: 18px; padding-left: 0px !important;}
+			#ctl00_ContentPlaceHolder1_TabContainer1_body{ margin-top: -1px;}
+
+
+#ctl00_ContentPlaceHolder1_TabContainer1_TabPanel1_RbtForeignType td{padding-bottom: 7px;}
+#ctl00_ContentPlaceHolder1_TabContainer1_TabPanel1_RbtForeignType td input{ margin-top: 02px;}
+#ctl00_ContentPlaceHolder1_TabContainer1_TabPanel1_PanOtherMCIreset .form-group .control-label{ padding-top: 5px;}
+.pl-0{ padding-left: 0px !important;}
+.mb-0{ margin-bottom: 0px !important;}
+.pr-0{ padding-right: 0px !important;}
+.mb-10{ margin-bottom: 05px !important;}
+.pt-0 { padding-top: 0px !important;}
+.pb-10{ padding-bottom: 10px !important;}
+#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelapplicationform_paneltab4 .form-group .form-group .col-md-5{ padding-top: 10px;}
+#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelapplicationform_paneltab4 .form-group .form-group .col-md-2 .control-label{ padding-top: 10px;}
+#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelapplicationform_Caste_Category{ padding-top: 20px;}
+#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelapplicationform_Citizen_India_Type {  margin-top: 15px;}
+.birthDetails .control-label{  padding-top: 0px !important;}
+.nationality #ctl00_ContentPlaceHolder1_TabContainer1_TabPanelapplicationform_Caste_Category ,
+.nationality #ctl00_ContentPlaceHolder1_TabContainer1_TabPanelapplicationform_Citizen_India_Type{ margin-top: 7px; }
+#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelapplicationform_RollNo_10{ width: 100% !important;}
+.personalinfo input{ width: 100% !important;}
+.class12 .col-md-6:last-child .form-group:last-child .control-label{ padding-top: 13px !important;}
+.class10 .col-lg-3.col-md-4.col-sm-6.form-group input , 
+.class11 .col-lg-3.col-md-4.col-sm-6.form-group input{ width: 80px !important;}
+.col-lg-1.col-md-2.pl-0.padrightzero , .col-md-1.padleftzero.padrightzero{ width: 10%;}
+.medQualify .appformfield #lbremove{ width: 35px;}
+
+.d-none{ display: none ;}
+        @keyframes blink {
+            50% {
+                border-color: #fff;
+            }
+        }
+.rediodiv input{ margin-top: 2px;}
+.rediodiv label{ margin-bottom: 5px; display: inline-block;}
+.rediodiv.paddtop3 label{ margin-top: 3px;}
+.radio .rediodiv1 table tr td input[type="radio"]{margin-top: 3px;}
+.appformfield .form-group:first-child .control-label,.com1 .form-group:first-child .control-label{ padding-top: 0px!important;}
+.ajax__tab_body .radio{ margin: 0px!important;}
+.tdtextleft tr td{text-align: left!important;}
+.form-control.max250{max-width: 250px;}
+.clickget h1{padding-left: 0px!important; padding-bottom: 0px!important;}
+.newchangename .tabchk .checkbox-inline{ margin-bottom: 0px!important;}
+.newchangename .tabchk .checkbox-inline input[type="checkbox"]{ margin-top: 2px;}
+.margintop10{margin-top: 10px;}
+.paddtop0{padding-top: 0px!important;}
+.commanFormSet .form-group:first-child .control-label,.commanFormSet .form-group .control-label{padding-top: 0px!important;}
+.newpaddleftright0{padding-left: 0px; padding-right: 0px;}
+.tabradio.rediodiv input{ margin-right: 4px;}
+.special1 .control-label{ padding-top: 0px!important;}
+.special1 .control-label input[type="radio"], input[type="checkbox"]{margin-top: 2px!important;}
+.marginbtm15{margin-bottom: 15px;}
+.btn_group1{margin-bottom: -10px;}
+.btn_group1 .btn{margin-bottom: 10px;}
+.table_set1{}
+.minwidth165{min-width: 165px;}
+.minwidth106{min-width: 106px;}
+.table_set1mobile tr:first-child td .form-group .control-label{ padding-top: 0px!important;}
+.detailinfo{float: right;}
+.detailinfo ul{ margin-top: 0px;}
+.rowCenter{display: flex; align-items: center;}
+.rowCenter h4{ margin-bottom: 0px;}
+.checkbox1{ position: relative;}
+.checkbox1 .certi_msg{ padding-left: 3px;}
+.checkbox1 .leftpaddset1{padding-left: 24px;}
+.checkbox1 .icheckbox_minimal-grey{margin: -10px 0px 0px 0px!important;}
+.checkbox1 .icheckbox_minimal-grey input{left: 0px!important;}
+
+.tableComman table tr td,.table1 table tr th{ padding: 3px!important;}
+.paddleft20{padding-left: 20px!important;}
+.dashboardcontent li.linebrd{border-bottom: #afabab solid 1px; padding-bottom: 10px; margin-bottom: 8px;}
+.hdname1{padding: 15px 15px 0px 15px; display: flex; flex-direction: row; justify-content: flex-start; align-items: center; font-size: 20px;}
+.hdname1 i{margin-right: 10px;}
+.marginleft0{margin-left: 0px!important;}
+
+
+
+
+
+				@media (max-width:1024px){
+					.birthDetails > .col-md-3 { width: 32%; padding-right: 0px;}
+					.birthDetails > .col-md-3 .col-md-4.padrightzero{ width: 25%;}
+					 .birthDetails > .col-md-4 { width: 36%; padding-left: 0px;}
+					 .nationality .col-md-6{ float: inherit;}
+					.class10  .col-lg-3.col-md-4 input , .class11 .col-lg-3.col-md-4 input{ width: 70px !important; }
+					#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelapplicationform_PanelPassport .col-md-6 .col-md-12.padrightzero{ padding-left: 0px !important; padding-right: 15px !important;}
+					
+					/* .birthDetails .col-md-2:last-child{ margin-left: 16.5%; padding-bottom: 20px;} */
+					.widthfull1024{max-width: 100%!important;}
+				}
+        @media (max-width: 991px) { 
+            #header{ display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;}
+            #header .buttonboxmain{ margin-top: 0px;}
+            #header .toprighttext{ align-items: center; padding-top: 0px; flex-wrap: wrap;}
+            .logo{ width: 13%;}
+            .logo img{ width: 100% !important;}
+            .buttonboxmain{ display: flex; flex-direction: column; align-items: center; justify-content: center; margin-top: 50px;}
+
+						.info_text{ font-size: 45px; line-height: 55px; }
+
+						#ctl00_ContentPlaceHolder1_TabContainer1_body .appformfield h3{ font-size: 18px; line-height: 24px;}
+						.padding50{ padding: 30px 0px !important;}
+						.appformfield{ padding-top: 0px;}
+						#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelBookApppointment_onlinepayment h1 .PrintHide{margin-left: 0px; margin-top: 15px;}
+						#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelBookApppointment_onlinepayment h1{ font-size: 16px;}
+
+						.form-group.textright{margin-right: 15px;}
+						.pr-0{ padding-right: 0px !important;}
+						.w-500{ margin-left: 15px;}
+						#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelBookApppointment_successpayment.PrintHide_div{ width: 100%;}
+						#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelBookApppointment_bookapnt .col-md-4{ width: 100%;}
+						#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelBookApppointment_successpayment .tabchk label{ width: 100% !important;}
+						#PanDoc_Permenent .control-label { width: 100% !important; max-width: 600px !important;}
+						#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelBookApppointment_DivRegistration .form-group .control-label:first-child{width: 25%;}
+						.birthDetails > .col-md-3 , .birthDetails > .col-md-4{ width: 100%; padding-right: 15px;}
+						.placeOfBirth{ padding-left: 20px; padding-top: 10px;}
+						.birthDetails .padrightzero{ padding-right: 15px !important;}
+						.birthDetails > .col-md-3 .col-md-4.padrightzero{ width: 33%;}
+						.class10 .col-md-12 , .class11 .col-md-12 , .class12{ padding: 0px;}
+						 .class10 .pl-0 , .class11 .pl-0{ padding-left: 15px !important;}
+						 .class10  .col-lg-3.col-md-4.col-sm-6.form-group , 
+						 .class11  .col-lg-3.col-md-4.col-sm-6.form-group{ padding: 0px !important; width: 45%;}
+						 .class10 .col-md-3.col-sm-3.form-group , 
+						 .class11 .col-md-3.col-sm-3.form-group{ padding: 0px !important; width: 28%;}
+						 .class12 .col-md-6{ padding-left: 0px;}
+						 .class12 .col-md-6 .row .col-md-6.padrightzero { padding-left: 15px;}
+						 .class12 .col-md-6 .row .col-lg-6.col-md-6.col-sm-4 , .class12 .col-md-6 .row .col-md-6.col-sm-4  { padding-left: 15px;}
+						 .clgName .col-md-12{ padding: 0px;}
+						 #ctl00_ContentPlaceHolder1_TabContainer1_TabPanelapplicationform_paneltab4 .col-md-12 .form-group .col-md-12{  padding-top: 10px;}
+						 .subjectDetail > .col-md-12{ padding-left: 0px;}
+						 .medQualify .col-md-12 , .medQualify .col-md-11{ padding-left: 0px;}
+						 #ctl00_ContentPlaceHolder1_TabContainer1_TabPanelapplicationform_paneltab4 .row:nth-child(3) .col-md-12.appformfield:last-child{ padding-left: 0px;}
+						 .screeningTest .col-md-5 { padding-left: 0px; padding-right: 15px !important;}
+						 .internshipTraining .col-md-12{ padding-left: 15px !important;}
+						 .internshipTraining .col-md-3{ padding: 0px 30px;}
+						 .p-15{ padding: 0px 15px !important;}
+						 #ctl00_ContentPlaceHolder1_TabContainer1_TabPanelapplicationform_rbtngender label{ margin-right: 12px; }
+						 #ctl00_ContentPlaceHolder1_TabContainer1_TabPanelapplicationform_rbtngender input[type="radio"]{ margin-left: 0px;}
+						 .col-lg-1.col-md-2.pl-0.padrightzero , .col-md-1.padleftzero.padrightzero{ width: 100%;}
+						 .paddtab-mboleset1{padding-left: 0px; padding-right: 0px;}
+						 .fulltable .fulltd{ display: block; width: 100%;}
+						 .tdtextleft tr td.mobiletextright{text-align: right!important;}
+						 .tdtextleft tr td.mobiletextright{text-align: right!important;}
+						 .padleftzero.tabpaddrightzero{padding-right: 0px!important;}
+						 .padrightzero.tabpaddrightzero{padding-right: 0px!important; padding-left: 0px!important;}
+						 .newpaddleftright0{padding-left: 15px; padding-right: 15px;}
+						 .dashboardcontent{margin: 15px!important;}
+        }
+        @media (max-width: 767px) {
+            #header .toprighttext{ font-size: 15px;}
+            #header .toprighttext .btnfeedback{ display: none;}
+            #header .toprighttext{ flex: 0 0 100%; max-width: 100%; margin-top: 10px; justify-content: center;}
+            .d-flex { justify-content: center; text-align: center;}
+            #header .btnfeedback{ padding: 10px 20px; font-size: 16px; display: block;}
+
+						.info_text{ font-size: 40px; line-height: 50px; }
+						.loginpagebox #ctl00_ContentPlaceHolder1_UP1 table{ width: 100%;}
+						.loginpagebox #ctl00_ContentPlaceHolder1_UP1 table tr{ display: flex;}
+
+						.hmli li a{ font-size: 26px; line-height: 30px;}
+						.mpcontenetarea h4 { font-size: 13px; padding-top: 5px; }
+						.mpcontenetarea h4 strong{font-size: 13px;}
+						.appformfield .tabradio input[type="radio"]{ margin-left: 0px;}
+						#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelapplicationform_rbtngender tr td { padding-left: 0px;}
+						.form-group{margin-bottom: 0px;}
+						.navbar-toggle{margin-top: 25px;}
+						.navbar-toggle span { font-size: 22px; }
+			.radio table tr td input[type="radio"] { margin-top: 0px; }
+			#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelBookApppointment_BookAppointment1 .form-group .control-label:first-child { width: 40%; }
+			#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelBookApppointment_DivRegistration{ width: 100% !important;}
+			#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelBookApppointment_DivRegistration .form-group .control-label{width: 32% !important;}
+			.w-500 .tblcalender{ padding-bottom: 20px; margin-bottom: 20px;}
+			#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelBookApppointment_btnprintbtn .btn{ font-size: 12px;}
+			#ctl00_ContentPlaceHolder1_TabContainer1_TabPanel1_PanOtherMCIreset .row .padleftzero{ padding-left: 15px !important;}
+			#ctl00_ContentPlaceHolder1_TabContainer1_TabPanel1_btnForeignType{ margin-top: 15px;}
+			
+			.col-xs-4{ padding-bottom: 10px;}
+			.placeOfBirth { padding-left: 15px;}
+			.class10 .col-lg-3.col-md-4.col-sm-6.form-group, .class11 .col-lg-3.col-md-4.col-sm-6.form-group,
+			.class10 .col-md-3.col-sm-3.form-group, .class11 .col-md-3.col-sm-3.form-group{ padding: 0px 15px !important; width: 70%;}
+			.dateJoining label{ padding-left: 15px;}
+			.medQualify .col-md-12, .medQualify .col-md-11{ padding: 15px; padding-left: 0px;}
+			/* #ctl00_ContentPlaceHolder1_TabContainer1_TabPanelapplicationform_paneltab4 .row:nth-child(3) .col-md-12.appformfield:last-child .col-md-12 .tblbscsubject{padding: 15px;} */
+			#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelapplicationform_paneltab4 .row:nth-child(3) .col-md-12.appformfield:last-child{padding: 15px;}
+			#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelapplicationform_paneltab4 .row:nth-child(3) .col-md-12.appformfield:last-child{padding-right: 30px;}
+			.screeningTest .col-md-5 { padding-left: 15px;}
+			.screeningTest .col-lg-6 .col-md-5 , .screeningTest .col-md-7 .col-md-7{ padding: 0px !important;}
+			#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelapplicationform_Pnlinternship{ padding-top: 20px;}
+			#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelapplicationform_btnsubmit{ margin-top: 20px !important;}
+			.topright{ width: 15%;}
+			.ajax__tab_body .fulldiv{width: 100%!important;}
+			.ajax__tab_body .fulldiv .form_alignment .form-group label:first-child{width: 28%;}
+			.ajax__tab_body .fulldiv .form_alignment .form-group strong{width: 72%;}
+			.paddnonemobile{padding: 0px!important;}
+			.paddleftright0{padding-left: 0px; padding-right: 0px;}
+			.navbar .navbar-tools{display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;}
+			.navbar .navbar-tools .nav.navbar-right{float: none;}
+			#ctl00_ContentPlaceHolder1_TabContainer1_body .form-group { margin-bottom: 10px;}
+			.fulltable .fulltd{ display: block; width: 100%;}
+			.tdtextleft tr td.mobiletextright{text-align: right!important;}
+			#ctl00_ContentPlaceHolder1_TabContainer1_body .appformfield .col-xs-4{padding-bottom: 0px;}
+			.padleftzero.mobilepaddrightzero,.col-md-6.padleftzero.mobilepaddrightzero{padding-right: 0px!important;}
+			.padrightzero.mobilepaddrightzero{padding-right: 0px!important;}
+			.mobilepaddrightzero{padding-right: 0px!important;}
+			.rediodiv.paddtop3 label{ margin-top: 0px;}
+			.rediodiv.paddtop3 input[type="radio"]{ margin-top: 2px;}
+			.btn_group1{text-align: center;}
+			.rowCenter{flex-wrap: wrap; /*margin-left: 0px; margin-right: 0px;*/}
+			.rowCenter h4{margin-bottom: 5px; font-size: 14px;}
+			.detailinfo{float: left; text-align: left; padding-bottom: 10px;}
+			.form_alignment .reciptno label{width: 100%!important; max-width: 142px!important;}
+			.ajax__tab_body h3{font-size: 18px;}
+			.hdname1{font-size: 17px; padding-bottom: 15px;}
+			
+			
+         }
+         @media (max-width: 575px) {
+            #header .buttonboxmain{ margin-left: 25px;}
+            #header .buttonboxmain a{ padding: 10px 8px;  font-size: 14px;}
+            #header .btnfeedback{ font-size: 14px;}
+            #header .toprighttext{ flex: 0 0 100%; max-width: 100%; margin-top: 10px; justify-content: center;}
+            
+						.logniarea{ display: flex; flex-direction: column; align-items: center;}
+						.logniarea .col-6{ display: flex; align-items: center; justify-content: center;}
+						.info_text { font-size: 30px; line-height: 40px; }
+
+						.hmli li a { font-size: 22px; line-height: 28px; } 				
+						.mpcontenetarea h4 { font-size: 13px; padding-top: 5px; }
+
+						.blink{ font-size: 14px !important; }
+						.ajax__tab_xp .ajax__tab_outer{ height: 40px!important;}
+
+						#ctl00_ContentPlaceHolder1_TabContainer1_body .appformfield{ padding-left: 15px; padding-right: 15px;}
+						#ctl00_ContentPlaceHolder1_TabContainer1_body .appformfield h3{ font-size: 16px; line-height: 20px;}
+
+						#ctl00_ContentPlaceHolder1_TabContainer1_header{ display: flex; flex-direction: column; width: 100%; margin-bottom: 20px;}
+						.panel-body{ padding: 0px;}
+						#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelInstruction_paneltab1 .panel-body{ padding: 10px;}
+						 .ajax__tab_xp .ajax__tab_outer , .ajax__tab_xp .ajax__tab_outer .ajax__tab_inner span{ width: 100%; font-size: 16px;}
+						 .ajax__tab_xp .ajax__tab_header span.tabdeactive { display: block; font-size: 16px;overflow: visible; height: 40px; line-height: 32px; text-align: left; margin-right: 0px;}
+						 .ajax__tab_xp .ajax__tab_header { padding-left: 0px;}
+						 h1{ font-size: 24px; line-height: 26px;}
+					h1.icon1{ background-size: 18px;}
+					#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelBookApppointment_DivRegistration{ width: 100% !important;}
+					#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelBookApppointment_divprintdetail a{ margin: 5px 0px;}
+					.PrintHide{ margin-left: 15px; margin-top: 5px;}
+					.btnback{ margin-bottom: 15px;}
+					.ajax__tab_xp .ajax__tab_outer{ display: flex !important; align-items: center;}
+					/*.ajax__tab_xp .ajax__tab_active .ajax__tab_outer:last-child{ border-bottom: 0px solid #ccc !important;}*/
+					.ajax__tab_xp .ajax__tab_active .ajax__tab_outer:last-child{ border-bottom: 1px solid #ccc !important;}
+					#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelBookApppointment_DivRegistration table{ border: none;}
+					#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelBookApppointment_BookAppointment2 .radio{ padding-left: 0px;}
+					#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelBookApppointment_onlinepayment .col-md-12 {padding-left: 0px;}
+					.max-width .form-group{padding: 0px 05px;}
+			.PrintHide_div { text-align:center; width: 100%; margin: 0 auto; }
+			#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelapplicationform_UpdatepanelImage table tbody tr { display: flex;flex-direction: column;}
+			#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelBookApppointment_bookapnt .detailinfo{text-align: left;}
+			.tblcalender tr td{ font-size: 12px;}
+			.w-500{ margin-left: 0px;}
+			#ctl00_ContentPlaceHolder1_divprovisional #Pnl_verficationcenter .control-label ,
+			#ctl00_ContentPlaceHolder1_divprovisional #PanDoc_Permenent .control-label{ width: 100% !important;}
+			#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelBookApppointment_btnprintbtn br{ display: none;}
+			#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelBookApppointment_btnprintbtn .btn { font-size: 11px; }
+			#ctl00_ContentPlaceHolder1_btnbookappointment{ margin-top: 15px;}
+			#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelBookApppointment_BookAppointment1 .form-group .control-label{ width: 100% !important;}
+
+			#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelBookApppointment_bookapnt .col-md-4 ,	
+			#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelBookApppointment_bookapnt .col-md-8{ padding-left: 0px;}
+			.dashboardcontent{ margin-left: 20px;}
+.btnprv{ padding-left: 3px; padding-right: 5px;}
+.btnprv,.btnnext{ font-size: 11px !important;}
+
+.col-xs-4{ width: 100%;}
+.birthDetails .col-xs-4{ width:33.33%;}
+.birthDetails .col-xs-4:nth-child(2){ padding: 0px 5px !important;}
+.birthDetails > .col-md-3 .col-md-4.padrightzero{ padding:0px 5px !important;}
+.class10 .col-lg-3.col-md-4.col-sm-6.form-group, .class11 .col-lg-3.col-md-4.col-sm-6.form-group,
+.class10 .col-md-3.col-sm-3.form-group,  .class11 .col-md-3.col-sm-3.form-group{ width: 100%;}
+.class12 .col-md-6 .row .col-lg-6.col-md-6.col-sm-4, .class12 .col-md-6 .row .col-md-6.col-sm-4{ padding-right: 15px !important;}
+.class12 .col-md-6.padleftzero{ padding-right: 0px;}
+.class12 .col-xs-4{ width: 50%;}
+.class12{ padding-bottom: 20px;}
+.tbl12subject tbody tr th{ font-size: 9px;}
+.tbl12subject tbody tr td input[type="radio"], 
+.tbl12subject tbody tr td input[type="checkbox"] { width: 10px; height: 10px; margin-top: 5px; }
+.tbl12subject tbody tr td label{ font-size: 9px; padding-left: 1px;}
+.dateJoining label{padding-left: 0px;}
+.dateOFPassing .col-xs-4 , .dateJoining .col-xs-4{ width: 33.33%;}
+.subjectDetail > .col-md-12{overflow: scroll;}
+.tblbscsubject{ width: 375px; overflow: scroll;}
+.medQualify .control-label br{ display: none;}
+.medQualify .control-label{ padding: 0px !important; margin-top: 0px !important; margin-right: 15px;}
+.radioitem tr td label{ font-size: 11px; padding-left: 1px;}
+.radioitem tbody tr th{ font-size: 11px;}
+.radioitem tbody tr td input[type="radio"], 
+.radioitem tbody tr td input[type="checkbox"] { width: 10px; height: 10px; margin-top: 5px; }
+#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelapplicationform_PanelPassport .col-md-6.padrightzero{padding-left: 0px !important;}
+#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelapplicationform_PanelPassport .col-xs-4 , .internshipTraining .col-xs-4{ width: 33.33%;}
+#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelapplicationform_paneltab4 .row:nth-child(3) .col-md-12.appformfield:last-child{ padding-top: 0px; padding-right: 15px;}
+.internshipTraining .col-xs-4:nth-child(1){ padding-right: 10px;}
+.internshipTraining .col-xs-4:last-child{padding-left: 10px;}
+.internshipTraining .col-xs-4:nth-child(2){padding: 0px 5px; }
+#ctl00_ContentPlaceHolder1_divpaymentdetails{ padding: 10px;}
+.PrintHide{ margin-bottom: 20px;}
+.d-none{ display: block;}
+#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelBookApppointment_successpayment {width: 100% !important;}
+.tabchk .checkbox-inline{ font-size: 12px; line-height: 16px; margin-bottom: 20px !important;}
+.col-xs-6{ width: 100%;}
+#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelapplicationform_PanelPassport .col-xs-4, .internshipTraining .col-xs-4.padrightzero{ padding-right: 15px !important;}
+#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelapplicationform_PanelPassport .mar-0 .col-xs-4.padrightzero{ padding-right: 0px !important;}
+#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelapplicationform_PanelPassport > .padleftzero.col-md-6 {padding-right: 0px !important;}
+#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelapplicationform_PanelPassport > .col-md-6.padrightzero .padleftzero{ padding-right: 0px !important;}
+.ajax__tab_body .fulldiv .form_alignment .form-group label:first-child{width: 35%;}
+.ajax__tab_body .fulldiv .form_alignment .form-group strong{width: 65%;}
+.paddmobile{padding: 15px!important;}
+.paddset1{padding: 3px 10px!important;}
+.ajax__tab_xp .ajax__tab_outer,.ajax__tab_xp .ajax__tab_active .ajax__tab_outer:last-child { border-bottom: 1px solid #999999!important; border-top: 0px;}
+.ajax__tab_header {border-top: 1px solid #999999!important;}
+.ajax__tab_xp .ajax__tab_tab{ padding-top: 4px!important; display: block!important;}
+.ajax__tab_xp .ajax__tab_inner{padding-left: 0px!important;}
+.conformpayment{margin-bottom: 0px; margin-top: 0px;}
+.ajax__tab_default .ajax__tab_header { white-space: wrap;}
+
+.tableSet1 tr{padding-bottom: 8px; display: block;}
+.tableSet1 tr th, .tableSet1 tr td{display:inline-block;}
+.tableSet1 tr th:nth-child(3),.tableSet1 tr th:nth-child(4){display: none;}
+.tableSet1 tr th:first-child,.tableSet1 tr td:first-child{ width: 40px;}
+.tableSet1 tr th:nth-child(2),.tableSet1 tr td:nth-child(2){ width: calc(100% - 40px); text-align: left;}
+.tableSet1 tr td:nth-child(3){ width: 50%; text-align: left;}
+.tableSet1 tr td:nth-child(4){ width: 50%; text-align: right;}
+
+.margintop15{margin-top: 15px;}
+
+}
+		 @media (max-width: 480px) {
+			.ajax__tab_body .fulldiv .form_alignment .form-group label:first-child{width: 100%;}
+			.ajax__tab_body .fulldiv .form_alignment .form-group strong{width: 100%; display: block;}
+			.ajax__tab_body #tblfees{margin-top: 10px;}
+			.ajax__tab_body #tblfees tr td:first-child{ width: 142px!important;}
+			.mobile480table tr td{ display: block; width: 100%!important;}
+			.tdtextleft tr td.mobiletextright{text-align: left!important;}
+			.fulltable{display: block!important;}
+			.clickget h1{display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;}
+			.conformpayment{margin: 8px 0px 0px 0px;}
+			.rediodiv.mobileset3 td{ display: block; width: 100%; text-align: left;}
+			.rediodiv.mobileset3 td input{margin-right: 3px;}
+			.set_table2 tr td{display: block; width: 100%;}
+			.table_set1mobile tr td{display: block; width: 100%;}
+			.table_set1mobile tr td .form-group .control-label{ width: 100%;}
+			.table_set1mobile tr td .form-group strong{display: block;width: 100%;}
+			.detailinfo{padding-top: 5px; margin-bottom: -3px;}
+			.detailinfo ul li{padding-bottom: 3px;}
+			.checkbox1 .leftpaddset1{padding-left: 0px;}
+			.btn.marginmobilenone{margin-left: 0px!important;}
+			.hmli li{padding-left: 0px;}
+			.hmli li a{font-size: 18px; padding-left: 40px;}
+		 }
+ 		@media (max-width: 380px) {
+			h1{ font-size: 20px; line-height: 26px;}
+			h1.icon1{ background-size: 18px;}
+			.col-xs-4{ width: 100% !important;}
+			#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelapplicationform_PanelPassport .padleftzero{padding-right: 0px;}
+			#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelapplicationform_PP_b tr{ display: flex; flex-direction: column;}
+			.radioitem tr td label{font-size: 13px;}
+			#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelapplicationform_PanelPassport .padleftzero .padrightzero{ padding-right: 15px !important;}
+			
+			.overflow{ overflow: scroll; margin-top: 20px; padding-left: 0px;}
+			.control-label b , .control-label strong , strong{ font-size: 10px; line-height: 16px;}
+			.control-label , strong{ line-height: 12px;}
+			strong{ font-size: 12px;}
+			.birthDetails > .col-md-3 .col-md-4.padrightzero { padding: 0px 15px !important; }
+			.birthDetails .padrightzero.col-xs-4 , .birthDetails .col-xs-4:nth-child(1){ padding-bottom: 0px;}
+			.birthDetails .col-xs-4:nth-child(2){ padding: 0px 15px !important;}
+			.appformfieldmrgrmv .col-xs-4 , .addressInfo .col-xs-4{ padding: 0 0px; padding-bottom: 10px;}
+			.appformfieldmrgrmv .col-lg-3.col-md-4.col-sm-6.form-group:nth-child(2){ display: block;}
+			.subjectDetail .col-md-12{ padding:10px 0px;}
+			#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelapplicationform_paneltab4 .row:nth-child(3) .col-md-12.appformfield:last-child{ padding: 15px 5px;}
+			#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelapplicationform_paneltab4 .col-md-12 .form-group .col-md-12{ padding: 0px 7px !important; padding-left: 5px;}
+			.internshipTraining .col-md-3 { padding: 0px 23px; }
+			.internshipTraining .col-xs-4 { padding: 0px 10px !important; }
+			.padd-0{ padding: 0px;}
+			.mar-0{ margin: 0px -5px;}
+			.mar-0 .col-xs-4{ padding: 0px;}
+			#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelapplicationform_paneltab4 .col-md-12 .clgName  .form-group .col-md-12 , 
+			#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelapplicationform_paneltab4 .col-md-12 .form-group .col-md-12,
+			#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelapplicationform_paneltab4 .col-md-12 .form-group .class11 .col-md-12{padding: 0px !important;}
+			#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelapplicationform_paneltab4 .col-md-12 .form-group .col-md-12.pb-10{padding: 0px 15px !important;}
+			#ctl00_ContentPlaceHolder1_divprovisional .form-group .control-label{ /*font-size: 10px;*/     font-size: 12px; line-height: 18px;}
+			#ctl00_ContentPlaceHolder1_TabContainer1_TabPanelapplicationform_panperad .col-xs-4{ padding: 0px 15px;}
+			.form-control{ font-size: 12px !important; padding: 5px 3px !important;}
+			#footet .footetleft{ width: 100%;}
+			#footet { text-align: center;}
+			#footet .floatright{ float: inherit;}	
+			.mobialset2{display: block; max-width: 228px;}	
+			span.certi_msg{font-size: 9pt;}		
+			.control-label b, .control-label strong, strong{font-size: 11px;}	
+			.tableSet1 tr th,.tableSet1 tr td{padding: 3px 3px;}
+			.tableSet1 tr th:first-child,.tableSet1 tr td:first-child{ width:30px!important; vertical-align: top!important;}
+			.tableSet1 tr th:nth-child(2),.tableSet1 tr td:nth-child(2){ width: calc(100% - 30px)!important; text-align: left;}
+			.tableSet1 tr td:nth-child(3){ width: 100%!important; text-align: center;}
+			.tableSet1 tr td:nth-child(4){ width: 100%!important; text-align: center;}
+			.mobilefnt13{font-size: 12px!important;}
+			.mpcontenetarea h4 { font-size: 12px;}
+			.mpcontenetarea h4 strong{font-size: 12px;}
+			.ajax__tab_xp .ajax__tab_body{font-size: 12px;}
+			.btnprv,.btnnext{ font-size: 10px !important;}
+			.tblcalender tbody tr:first-child td:nth-child(2){ font-size: 11px;}
+			.ajax__tab_body h3{font-size: 17px;}
+		}

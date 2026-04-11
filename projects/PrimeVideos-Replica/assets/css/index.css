@@ -1,0 +1,301 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Amazon Ember';
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --primary-color: #00050d;
+    --secondary-color: #f3f3f3;
+    --color-blue: #157bcf;
+    --blue-hover: #3a9eef;
+
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /*full viewport*/
+  background-color: var(--primary-color);
+}
+
+main {
+  flex: 1;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    max-width: 1320px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.all-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.i-size {
+    font-size: 20px;
+}
+
+.gap-5 {
+    gap: 5px;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.gap-30 {
+    gap: 30px;
+}
+
+.height-650{
+    height: 650px;
+}
+
+.justify-content {
+    justify-content: space-between;
+}
+
+.space{
+    justify-content: center;
+}
+
+.align {
+    align-items: center !important;
+}
+
+.hover-effect {
+    cursor: pointer;
+    padding: 10px 15px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.hover-effect:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0 var(--secondary-color);
+}
+
+
+/* #################################################################
+                            Header
+#################################################################### */
+
+.header {
+    padding: 10px 0;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+/* ######################## Left part ############################## */
+
+.header-left ul {
+    margin-left: 50px;
+}
+
+.divider {
+    width: 2px;
+    height: 22px;
+    margin: 0 15px;
+    background-color: #696969;
+}
+
+.subscription {
+    margin-left: 15px;
+}
+
+/* ######################## Right Part ##############################*/
+
+.buttons span {
+    width: 40px;
+    height: 40px;
+    border-radius: 50% !important;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.buttons select {
+    border: none;
+}
+
+.profile {
+    background-image: url('../images/profile.svg');
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border: 5px solid var(--primary-color);
+    border-radius: 50%;
+    background-size: contain;
+}
+
+.profile:hover {
+    border: 5px solid var(--secondary-color);
+    box-shadow: 0 0 5px 0 var(--secondary-color);
+}
+
+.join-prime {
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--color-blue);
+    color: var(--secondary-color);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.join-prime:hover {
+    background-color: var(--blue-hover);
+    box-shadow: 0 0 5px 0 var(--blue-hover);
+}
+
+
+
+/* #################################################################
+                            Main
+#################################################################### */
+
+
+/* ######################## Non Prime Home section ##############################*/
+.non-prime-home-section {
+    color: var(--secondary-color);
+    padding: 72px 0;
+    height: 650px;
+}
+
+.background-img-1 {
+    background: linear-gradient(to right, #000000e0 50%, #00000040 57%, #00000000 60%), url(../images/non-prime-home-img1.jpg);
+    background-repeat: no-repeat;
+    background-position: right top;
+
+}
+
+.background-img-2 {
+    background: linear-gradient(to right, #000000 50%, #000000aa 52%, #00000000 60%), url(../images/non-prime-home-img2.jpg);
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+.part-1,
+.part-2 {
+    max-width: 50%;
+}
+
+.part-1 h2 {
+    font-size: 46px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.part-1 p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+/* ######################## Buttons ##############################*/
+.non-prime-home-body-button {
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    cursor: pointer;
+    transform: scale(1.0);
+}
+
+.non-prime-home-body-button:hover {
+    transform: scale(1.05);
+    transition: all 0.3s linear;
+}
+
+
+/* ######################## Subscription ##############################*/
+.subscriptions {
+    color: var(--secondary-color);
+    padding: 72px 0;
+    height: 650px;
+    background-color: var(--primary-color);
+}
+
+.sub-part-1,
+.sub-part-2 {
+    max-width: 50%;
+}
+
+.sub-part-1 h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.sub-part-1 p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.sub-card {
+    margin: 1px 3px;
+    cursor: pointer;
+
+}
+
+.sub-card img {
+    border-radius: 12px;
+}
+
+.sub-card img:hover {
+    box-shadow: 1px 1px 10px #a6a1a1c4;
+}
+
+/* #################################################################
+                            Footer
+#################################################################### */
+
+.prime-footer {
+    background-color: #222222;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.footer-home-prime {
+    text-align: center;
+    color: #6cb5ec;
+}
+
+.footer-home-prime img {
+    cursor: pointer;
+}
+
+.footer-home-prime div p {
+    cursor: pointer;
+}
+
+.gap-footer {
+    gap: 20px;
+}
+
+.affiliate {
+    color: #7f9198;
+}
